@@ -253,6 +253,8 @@
 <pin name="EN" x="-15.24" y="-5.08" length="middle"/>
 <pin name="OUT" x="15.24" y="2.54" length="middle" rot="R180"/>
 <pin name="BYP/ADJ" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<text x="-10.16" y="8.89" size="1.778" layer="95">&gt;Name</text>
+<text x="-10.16" y="-10.16" size="1.778" layer="95">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
