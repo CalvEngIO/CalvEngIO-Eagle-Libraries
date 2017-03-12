@@ -1139,7 +1139,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3314.pdf"&gt; Data sheet&lt;/a&gt
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="RESISTOR">
+<deviceset name="RESISTOR" prefix="R" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="R.US" x="0" y="0"/>
 </gates>

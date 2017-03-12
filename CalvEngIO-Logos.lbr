@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -144,16 +144,16 @@
 </layers>
 <library>
 <packages>
-<package name="LOGO.1">
+<package name="@HANDLE.1">
 <text x="-10.16" y="-1.27" size="2.54" layer="21" font="vector" ratio="15">@CalvEngIO</text>
 </package>
-<package name="LOGO.05">
+<package name="@HANDLE.05">
 <text x="-5.08" y="0" size="1.27" layer="21" font="vector" ratio="15">@CalvEngIO</text>
 </package>
-<package name="LOGO.075">
+<package name="@HANDLE.075">
 <text x="-7.62" y="0" size="1.905" layer="21" font="vector" ratio="15">@CalvEngIO</text>
 </package>
-<package name="LOGO.08">
+<package name="@HANDLE.08">
 <text x="-8.382" y="-1.27" size="2.032" layer="21" font="vector" ratio="15">@CalvEngIO</text>
 </package>
 <package name="OSHW-LOGO-S_COPPER">
@@ -1738,9 +1738,12 @@
 <vertex x="3.55" y="0.111"/>
 </polygon>
 </package>
+<package name="WEBSITE.05">
+<text x="0" y="0" size="1.27" layer="21">http://calveng.io</text>
+</package>
 </packages>
 <symbols>
-<symbol name="LOGO.1">
+<symbol name="@HANDLE.1">
 <text x="0" y="0" size="3.81" layer="90" font="vector" ratio="15">@CalvEngIO</text>
 </symbol>
 <symbol name="OSHW-LOGO">
@@ -6944,50 +6947,53 @@
 <vertex x="15.05" y="1.04"/>
 </polygon>
 </symbol>
+<symbol name="WEBSITE.1">
+<text x="0" y="0" size="3.81" layer="90">http://calveng.io</text>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="LOGO.1">
+<deviceset name="@HANDLE.1">
 <gates>
-<gate name="G$1" symbol="LOGO.1" x="0" y="0"/>
+<gate name="G$1" symbol="@HANDLE.1" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="LOGO.1">
+<device name="" package="@HANDLE.1">
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LOGO.05">
+<deviceset name="@HANDLE.05">
 <gates>
-<gate name="G$1" symbol="LOGO.1" x="0" y="0"/>
+<gate name="G$1" symbol="@HANDLE.1" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="LOGO.05">
+<device name="" package="@HANDLE.05">
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LOGO.075">
+<deviceset name="@HANDLE.075">
 <gates>
-<gate name="G$1" symbol="LOGO.1" x="0" y="0"/>
+<gate name="G$1" symbol="@HANDLE.1" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="LOGO.075">
+<device name="" package="@HANDLE.075">
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LOGO.08">
+<deviceset name="@HANDLE.08">
 <gates>
-<gate name="G$1" symbol="LOGO.1" x="10.16" y="0"/>
+<gate name="G$1" symbol="@HANDLE.1" x="10.16" y="0"/>
 </gates>
 <devices>
-<device name="" package="LOGO.08">
+<device name="" package="@HANDLE.08">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -7060,6 +7066,18 @@
 </gates>
 <devices>
 <device name="" package="ROHS_LOGO_0.18_IN">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="WEBSITE.05">
+<gates>
+<gate name="G$1" symbol="WEBSITE.1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="WEBSITE.05">
 <technologies>
 <technology name=""/>
 </technologies>
