@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.2">
+<eagle version="8.1.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -59,7 +59,7 @@
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -357,24 +357,24 @@ On-Chip Temparetur Compensated &amp; Calibrated Silicon Pressure Sensor</descrip
 <text x="1.27" y="6.22" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="OESIP14">
-<smd name="1" x="-1.08" y="2.54" dx="0.6" dy="0.35" layer="1"/>
-<wire x1="-1.57" y1="-2.79" x2="1.58" y2="-2.79" width="0.127" layer="21"/>
-<wire x1="1.58" y1="-2.79" x2="1.58" y2="3.06" width="0.127" layer="21"/>
-<wire x1="1.58" y1="3.06" x2="-1.57" y2="3.06" width="0.127" layer="21"/>
-<wire x1="-1.57" y1="3.06" x2="-1.57" y2="-2.79" width="0.127" layer="21"/>
-<smd name="2" x="-1.08" y="1.74" dx="0.6" dy="0.35" layer="1"/>
-<smd name="3" x="-1.08" y="0.94" dx="0.6" dy="0.35" layer="1"/>
-<smd name="4" x="-1.08" y="0.14" dx="0.6" dy="0.35" layer="1"/>
-<smd name="5" x="-1.08" y="-0.66" dx="0.6" dy="0.35" layer="1"/>
-<smd name="6" x="-1.08" y="-1.46" dx="0.6" dy="0.35" layer="1"/>
-<smd name="7" x="-1.08" y="-2.26" dx="0.6" dy="0.35" layer="1"/>
-<smd name="8" x="1.07" y="-2.26" dx="0.6" dy="0.35" layer="1"/>
-<smd name="9" x="1.07" y="-1.46" dx="0.6" dy="0.35" layer="1"/>
-<smd name="10" x="1.07" y="-0.66" dx="0.6" dy="0.35" layer="1"/>
-<smd name="11" x="1.07" y="0.14" dx="0.6" dy="0.35" layer="1"/>
-<smd name="12" x="1.07" y="0.94" dx="0.6" dy="0.35" layer="1"/>
-<smd name="13" x="1.07" y="1.74" dx="0.6" dy="0.35" layer="1"/>
-<smd name="14" x="1.07" y="2.54" dx="0.6" dy="0.35" layer="1"/>
+<smd name="1" x="-1.2" y="2.54" dx="0.8" dy="0.35" layer="1"/>
+<wire x1="-1.7" y1="-2.79" x2="1.7" y2="-2.79" width="0.127" layer="21"/>
+<wire x1="1.7" y1="-2.79" x2="1.7" y2="3.06" width="0.127" layer="21"/>
+<wire x1="1.7" y1="3.06" x2="-1.7" y2="3.06" width="0.127" layer="21"/>
+<wire x1="-1.7" y1="3.06" x2="-1.7" y2="-2.79" width="0.127" layer="21"/>
+<smd name="2" x="-1.2" y="1.74" dx="0.8" dy="0.35" layer="1"/>
+<smd name="3" x="-1.2" y="0.94" dx="0.8" dy="0.35" layer="1"/>
+<smd name="4" x="-1.2" y="0.14" dx="0.8" dy="0.35" layer="1"/>
+<smd name="5" x="-1.2" y="-0.66" dx="0.9" dy="0.35" layer="1"/>
+<smd name="6" x="-1.2" y="-1.46" dx="0.9" dy="0.35" layer="1"/>
+<smd name="7" x="-1.2" y="-2.26" dx="0.9" dy="0.35" layer="1"/>
+<smd name="8" x="1.2" y="-2.26" dx="0.9" dy="0.35" layer="1"/>
+<smd name="9" x="1.2" y="-1.46" dx="0.9" dy="0.35" layer="1"/>
+<smd name="10" x="1.2" y="-0.66" dx="0.9" dy="0.35" layer="1"/>
+<smd name="11" x="1.2" y="0.14" dx="0.9" dy="0.35" layer="1"/>
+<smd name="12" x="1.2" y="0.94" dx="0.9" dy="0.35" layer="1"/>
+<smd name="13" x="1.2" y="1.74" dx="0.9" dy="0.35" layer="1"/>
+<smd name="14" x="1.2" y="2.54" dx="0.9" dy="0.35" layer="1"/>
 <rectangle x1="-0.508" y1="1.778" x2="0.508" y2="2.794" layer="21"/>
 <text x="-1.778" y="3.302" size="0.762" layer="25">&gt;Name</text>
 <text x="-1.778" y="-3.81" size="0.762" layer="25">&gt;Value</text>
@@ -489,6 +489,39 @@ On-Chip Temparetur Compensated &amp; Calibrated Silicon Pressure Sensor</descrip
 </polygon>
 <text x="0" y="2.159" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-2.159" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+</package>
+<package name="OESIP14-SLIM">
+<smd name="1" x="-1.08" y="2.54" dx="0.6" dy="0.35" layer="1"/>
+<wire x1="-1.57" y1="-2.79" x2="1.58" y2="-2.79" width="0.127" layer="21"/>
+<wire x1="1.58" y1="-2.79" x2="1.58" y2="3.06" width="0.127" layer="21"/>
+<wire x1="1.58" y1="3.06" x2="-1.57" y2="3.06" width="0.127" layer="21"/>
+<wire x1="-1.57" y1="3.06" x2="-1.57" y2="-2.79" width="0.127" layer="21"/>
+<smd name="2" x="-1.08" y="1.74" dx="0.6" dy="0.35" layer="1"/>
+<smd name="3" x="-1.08" y="0.94" dx="0.6" dy="0.35" layer="1"/>
+<smd name="4" x="-1.08" y="0.14" dx="0.6" dy="0.35" layer="1"/>
+<smd name="5" x="-1.08" y="-0.66" dx="0.6" dy="0.35" layer="1"/>
+<smd name="6" x="-1.08" y="-1.46" dx="0.6" dy="0.35" layer="1"/>
+<smd name="7" x="-1.08" y="-2.26" dx="0.6" dy="0.35" layer="1"/>
+<smd name="8" x="1.07" y="-2.26" dx="0.6" dy="0.35" layer="1"/>
+<smd name="9" x="1.07" y="-1.46" dx="0.6" dy="0.35" layer="1"/>
+<smd name="10" x="1.07" y="-0.66" dx="0.6" dy="0.35" layer="1"/>
+<smd name="11" x="1.07" y="0.14" dx="0.6" dy="0.35" layer="1"/>
+<smd name="12" x="1.07" y="0.94" dx="0.6" dy="0.35" layer="1"/>
+<smd name="13" x="1.07" y="1.74" dx="0.6" dy="0.35" layer="1"/>
+<smd name="14" x="1.07" y="2.54" dx="0.6" dy="0.35" layer="1"/>
+<rectangle x1="-0.508" y1="1.778" x2="0.508" y2="2.794" layer="21"/>
+<text x="-1.778" y="3.302" size="0.762" layer="25">&gt;Name</text>
+<text x="-1.778" y="-3.81" size="0.762" layer="25">&gt;Value</text>
+</package>
+<package name="6-PIN.CHIPLED">
+<smd name="6" x="0.6" y="-0.65" dx="0.4" dy="0.4" layer="1"/>
+<smd name="1" x="0.6" y="0.65" dx="0.4" dy="0.4" layer="1"/>
+<smd name="3" x="-0.6" y="0.65" dx="0.4" dy="0.4" layer="1"/>
+<smd name="4" x="-0.6" y="-0.65" dx="0.4" dy="0.4" layer="1"/>
+<smd name="5" x="0" y="-0.65" dx="0.2" dy="0.4" layer="1"/>
+<smd name="2" x="0" y="0.65" dx="0.2" dy="0.4" layer="1"/>
+<text x="-1.1" y="1.2" size="0.5" layer="25">&gt;Name</text>
+<text x="-1.1" y="-1.6" size="0.5" layer="27">&gt;Value</text>
 </package>
 </packages>
 <symbols>
@@ -607,6 +640,17 @@ On-Chip Temparetur Compensated &amp; Calibrated Silicon Pressure Sensor</descrip
 <pin name="P$2" x="7.62" y="0" visible="off" length="short" rot="R180"/>
 <text x="0" y="2.794" size="1.778" layer="95" font="vector" align="bottom-center">&gt;Name</text>
 <text x="0" y="-2.794" size="1.778" layer="96" font="vector" align="top-center">&gt;Value</text>
+</symbol>
+<symbol name="ADPS9008">
+<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<pin name="OUT" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="VCC" x="-12.7" y="2.54" length="middle"/>
+<pin name="GND" x="-12.7" y="-2.54" length="middle"/>
+<text x="-7.62" y="7.62" size="2.54" layer="95">&gt;Name</text>
+<text x="-7.62" y="-10.16" size="2.54" layer="96">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -857,6 +901,23 @@ On-Chip Temparetur Compensated &amp; Calibrated Silicon Pressure Sensor</descrip
 <attribute name="PROD_ID" value="COMP-09129"/>
 <attribute name="SF_ID" value="SEN-09088"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ADPS9008">
+<gates>
+<gate name="G$1" symbol="ADPS9008" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="6-PIN.CHIPLED">
+<connects>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="OUT" pad="6"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>

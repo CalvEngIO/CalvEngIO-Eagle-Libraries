@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="8.1.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -429,6 +429,21 @@ NS Package M08A</description>
 <rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
 <rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
 </package>
+<package name="SOT-363">
+<smd name="P1" x="-1.176" y="0.611" dx="0.85" dy="0.35" layer="1"/>
+<smd name="P3" x="-1.176" y="-0.689" dx="0.85" dy="0.35" layer="1"/>
+<smd name="P2" x="-1.18" y="-0.038" dx="0.85" dy="0.35" layer="1"/>
+<smd name="P6" x="1.172" y="0.611" dx="0.85" dy="0.35" layer="1"/>
+<smd name="P4" x="1.172" y="-0.689" dx="0.85" dy="0.35" layer="1"/>
+<smd name="P5" x="1.168" y="-0.038" dx="0.85" dy="0.35" layer="1"/>
+<wire x1="-0.621" y1="0.944" x2="-0.621" y2="-1.073" width="0.05" layer="21"/>
+<wire x1="-0.621" y1="-1.073" x2="0.614" y2="-1.073" width="0.05" layer="21"/>
+<wire x1="0.614" y1="-1.073" x2="0.614" y2="0.953" width="0.05" layer="21"/>
+<wire x1="0.614" y1="0.953" x2="-0.621" y2="0.953" width="0.05" layer="21"/>
+<circle x="-0.3937" y="0.6096" radius="0" width="0.254" layer="21"/>
+<text x="-1.27" y="1.27" size="0.508" layer="25">&gt;NAME</text>
+<text x="-1.27" y="-1.905" size="0.508" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="OPAMP">
@@ -525,6 +540,20 @@ NS Package M08A</description>
 <wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-7.62" x2="7.62" y2="5.08" width="0.254" layer="94"/>
 </symbol>
+<symbol name="TS5A9411">
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<pin name="NC" x="12.7" y="7.62" length="middle" rot="R180"/>
+<pin name="NO" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="COM" x="-12.7" y="7.62" length="middle"/>
+<pin name="V+" x="-12.7" y="2.54" length="middle"/>
+<pin name="GND" x="-12.7" y="0" length="middle"/>
+<pin name="CTRL" x="-12.7" y="-2.54" length="middle"/>
+<text x="-7.62" y="11.43" size="1.27" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-7.62" size="1.27" layer="95">TS5A9411</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="OP-QUAD">
@@ -572,6 +601,8 @@ NS Package M08A</description>
 <connect gate="G$4" pin="+IN" pad="12"/>
 <connect gate="G$4" pin="-IN" pad="13"/>
 <connect gate="G$4" pin="OUT" pad="14"/>
+<connect gate="G$5" pin="V+" pad="4"/>
+<connect gate="G$5" pin="V-" pad="11"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -591,6 +622,8 @@ NS Package M08A</description>
 <connect gate="G$4" pin="+IN" pad="12"/>
 <connect gate="G$4" pin="-IN" pad="13"/>
 <connect gate="G$4" pin="OUT" pad="14"/>
+<connect gate="G$5" pin="V+" pad="4"/>
+<connect gate="G$5" pin="V-" pad="11"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -610,6 +643,8 @@ NS Package M08A</description>
 <connect gate="G$4" pin="+IN" pad="12"/>
 <connect gate="G$4" pin="-IN" pad="13"/>
 <connect gate="G$4" pin="OUT" pad="14"/>
+<connect gate="G$5" pin="V+" pad="4"/>
+<connect gate="G$5" pin="V-" pad="11"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -859,6 +894,26 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8603_8607_8609
 <connect gate="G$1" pin="REF" pad="6"/>
 <connect gate="G$1" pin="RG1" pad="2"/>
 <connect gate="G$1" pin="RG2" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TS5A9411">
+<gates>
+<gate name="G$1" symbol="TS5A9411" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-363">
+<connects>
+<connect gate="G$1" pin="COM" pad="P5"/>
+<connect gate="G$1" pin="CTRL" pad="P1"/>
+<connect gate="G$1" pin="GND" pad="P3"/>
+<connect gate="G$1" pin="NC" pad="P4"/>
+<connect gate="G$1" pin="NO" pad="P6"/>
+<connect gate="G$1" pin="V+" pad="P2"/>
 </connects>
 <technologies>
 <technology name=""/>
