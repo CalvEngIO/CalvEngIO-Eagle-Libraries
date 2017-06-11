@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.1">
+<eagle version="8.2.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -566,7 +566,7 @@ NS Package M08A</description>
 <gate name="G$5" symbol="PWR+-" x="35.56" y="0"/>
 </gates>
 <devices>
-<device name="DIP14" package="DIP14">
+<device name="-DIP14" package="DIP14">
 <connects>
 <connect gate="G$1" pin="+IN" pad="3"/>
 <connect gate="G$1" pin="-IN" pad="2"/>
@@ -587,7 +587,7 @@ NS Package M08A</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="TSSOP14" package="TSSOP14">
+<device name="-TSSOP14" package="TSSOP14">
 <connects>
 <connect gate="G$1" pin="+IN" pad="3"/>
 <connect gate="G$1" pin="-IN" pad="2"/>
@@ -608,7 +608,7 @@ NS Package M08A</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="SO14" package="SO14">
+<device name="-SO14" package="SO14">
 <connects>
 <connect gate="G$1" pin="+IN" pad="3"/>
 <connect gate="G$1" pin="-IN" pad="2"/>
@@ -629,7 +629,7 @@ NS Package M08A</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="SSOP14" package="SSOP14">
+<device name="-SSOP14" package="SSOP14">
 <connects>
 <connect gate="G$1" pin="+IN" pad="3"/>
 <connect gate="G$1" pin="-IN" pad="2"/>
