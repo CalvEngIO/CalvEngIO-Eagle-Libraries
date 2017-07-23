@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.1">
+<eagle version="8.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -773,26 +773,34 @@ Holes are offset 0.007" from center to hold pins in place during soldering.
 <wire x1="0.8" y1="-1.016" x2="0.8" y2="1.016" width="0.127" layer="21"/>
 </package>
 <package name="USC">
+<description>Land pattern for Digi-Key Part Number: CUS15S30H3FCT-ND, Manufacturer's Part Number: CUS15S30,H3F</description>
 <wire x1="-0.85" y1="-0.625" x2="-0.85" y2="0.625" width="0.127" layer="21"/>
 <wire x1="-0.85" y1="0.625" x2="0.85" y2="0.625" width="0.127" layer="21"/>
 <wire x1="0.85" y1="0.625" x2="0.85" y2="-0.625" width="0.127" layer="21"/>
 <wire x1="0.85" y1="-0.625" x2="-0.85" y2="-0.625" width="0.127" layer="21"/>
-<smd name="+" x="-1.1" y="0" dx="0.4" dy="0.4" layer="1" rot="R90"/>
-<smd name="-" x="1.1" y="0" dx="0.4" dy="0.4" layer="1" rot="R90"/>
-<wire x1="0.7" y1="-0.6" x2="0.7" y2="0.6" width="0.127" layer="21"/>
-<wire x1="0.7" y1="0.6" x2="0.8" y2="0.6" width="0.127" layer="21"/>
+<smd name="+" x="-1.15" y="0" dx="0.6" dy="0.8" layer="1" rot="R90"/>
+<smd name="-" x="1.15" y="0" dx="0.6" dy="0.8" layer="1" rot="R90"/>
+<wire x1="0.5" y1="0.6" x2="0.8" y2="0.6" width="0.127" layer="21"/>
 <wire x1="0.8" y1="0.6" x2="0.8" y2="-0.6" width="0.127" layer="21"/>
-<wire x1="0.8" y1="-0.6" x2="0.6" y2="-0.6" width="0.127" layer="21"/>
-<wire x1="0.6" y1="-0.6" x2="0.6" y2="0.6" width="0.127" layer="21"/>
-<wire x1="0.6" y1="0.6" x2="0.5" y2="0.6" width="0.127" layer="21"/>
+<wire x1="0.8" y1="-0.6" x2="0.5" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="0.4" y1="0.6" x2="0.5" y2="0.6" width="0.127" layer="21"/>
 <wire x1="0.5" y1="0.6" x2="0.5" y2="-0.6" width="0.127" layer="21"/>
 <wire x1="0.5" y1="-0.6" x2="0.4" y2="-0.6" width="0.127" layer="21"/>
-<wire x1="0.4" y1="-0.6" x2="0.4" y2="0.6" width="0.127" layer="21"/>
-<wire x1="0.3" y1="0" x2="-0.2" y2="-0.5" width="0.127" layer="21"/>
-<wire x1="-0.2" y1="-0.5" x2="-0.2" y2="0.5" width="0.127" layer="21"/>
-<wire x1="-0.2" y1="0.5" x2="0.3" y2="0" width="0.127" layer="21"/>
+<wire x1="0.4" y1="-0.6" x2="0.4" y2="0" width="0.127" layer="21"/>
+<wire x1="0.4" y1="0" x2="0.4" y2="0.6" width="0.127" layer="21"/>
+<wire x1="0.4" y1="0" x2="-0.3" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="-0.3" y1="-0.5" x2="-0.3" y2="0.5" width="0.127" layer="21"/>
+<wire x1="-0.3" y1="0.5" x2="0.4" y2="0" width="0.127" layer="21"/>
 <text x="-2.9" y="1.1" size="1.27" layer="25">&gt;Name</text>
 <text x="-2.7" y="-2.3" size="1.27" layer="27">&gt;Value</text>
+</package>
+<package name="PG-SOT-323">
+<smd name="3" x="0" y="0.8" dx="0.6" dy="0.8" layer="1"/>
+<text x="0" y="1.651" size="0.6604" layer="25" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.349" size="0.6604" layer="27" ratio="20" rot="R180" align="top-center">&gt;VALUE</text>
+<smd name="2" x="0.65" y="-0.8" dx="0.6" dy="0.8" layer="1"/>
+<smd name="1" x="-0.65" y="-0.8" dx="0.6" dy="0.8" layer="1"/>
+<wire x1="-1" y1="0" x2="1" y2="0" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -845,7 +853,7 @@ Holes are offset 0.007" from center to hold pins in place during soldering.
 <vertex x="-1.27" y="-1.27"/>
 </polygon>
 </symbol>
-<symbol name="DIODE-SCHOTTKY">
+<symbol name="SCHOTTKY">
 <description>&lt;h3&gt; Schottky Diode&lt;/h3&gt;
 Diode with low voltage drop</description>
 <wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.1524" layer="94"/>
@@ -866,7 +874,7 @@ Diode with low voltage drop</description>
 <vertex x="-1.27" y="-1.27"/>
 </polygon>
 </symbol>
-<symbol name="DIODE-ZENER">
+<symbol name="ZENER">
 <description>&lt;h3&gt;Zener Diode&lt;/h3&gt;
 Allows current flow in one direction, but allows reverse flow when above breakdown voltage.</description>
 <wire x1="1.27" y1="0.889" x2="1.27" y2="0" width="0.1524" layer="94"/>
@@ -924,7 +932,7 @@ Allows current flow when high potential at base.</description>
 <pin name="C" x="2.54" y="-5.08" visible="off" length="short" direction="pas" swaplevel="3" rot="R90"/>
 <pin name="E" x="2.54" y="5.08" visible="off" length="short" direction="pas" swaplevel="2" rot="R270"/>
 </symbol>
-<symbol name="LABELED-NMOS">
+<symbol name="NFET">
 <description>&lt;h3&gt; N-channel MOSFET transistor&lt;/h3&gt;
 Switches electronic signals</description>
 <pin name="G" x="-5.08" y="-2.54" visible="off" length="short"/>
@@ -962,7 +970,7 @@ Switches electronic signals</description>
 <text x="5.08" y="0" size="1.778" layer="95" font="vector">&gt;NAME</text>
 <text x="5.08" y="-2.54" size="1.778" layer="96" font="vector">&gt;VALUE</text>
 </symbol>
-<symbol name="LABELED-PMOS">
+<symbol name="PFET">
 <description>&lt;h3&gt;P-channel MOSFET&lt;/h3&gt;
 Switches electrical signals</description>
 <text x="5.08" y="0" size="1.778" layer="95" font="vector">&gt;NAME</text>
@@ -1098,7 +1106,7 @@ Switches electrical signals</description>
 
 &lt;p&gt; Example: Digi-Key Part Number: RB161MM-20CT-ND&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="DIODE-SCHOTTKY" x="0" y="0"/>
+<gate name="G$1" symbol="SCHOTTKY" x="0" y="0"/>
 </gates>
 <devices>
 <device name="-BAT20J" package="SOD-323">
@@ -1206,7 +1214,7 @@ Switches electrical signals</description>
 <description>&lt;h3&gt;Zener Diode&lt;/h3&gt;
 &lt;p&gt;A Zener diode allows current to flow from its anode to its cathode like a normal semiconductor diode, but it also permits current to flow in the reverse direction when its "Zener voltage" is reached. - WIkipedia&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="DIODE-ZENER" x="0" y="0"/>
+<gate name="G$1" symbol="ZENER" x="0" y="0"/>
 </gates>
 <devices>
 <device name="-MM3Z3V3T1G" package="SOD-323">
@@ -1259,7 +1267,7 @@ Switches electrical signals</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="NPN" prefix="Q">
+<deviceset name="NPN" prefix="Q" uservalue="yes">
 <description>&lt;h3&gt;NPN transistor&lt;/h3&gt;
 &lt;p&gt;Current controlled devices typically used to amplify current or used as a switch.&lt;/p&gt;
 &lt;ul&gt;
@@ -1390,7 +1398,7 @@ Switches electrical signals</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="NFET" prefix="Q">
+<deviceset name="NFET" prefix="Q" uservalue="yes">
 <description>&lt;h3&gt;N-channel MOSFETs&lt;/h3&gt;
 &lt;p&gt;Voltage controlled devices that allow control of high current outputs.&lt;/p&gt;
 &lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
@@ -1400,7 +1408,7 @@ Switches electrical signals</description>
 &lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/11214”&gt;SparkFun MOSFET Power Controller&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
-<gate name="NMOS" symbol="LABELED-NMOS" x="0" y="0"/>
+<gate name="NMOS" symbol="NFET" x="0" y="0"/>
 </gates>
 <devices>
 <device name="-FDD8780" package="DPAK">
@@ -1423,10 +1431,7 @@ Switches electrical signals</description>
 <connect gate="NMOS" pin="S" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="PROD_ID" value="TRANS-11151"/>
-<attribute name="VALUE" value="310mA/60V/1.6Ω"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="-FQP30N06L" package="TO220V">
@@ -1494,6 +1499,16 @@ Switches electrical signals</description>
 </technology>
 </technologies>
 </device>
+<device name="-PG-SOT-323" package="PG-SOT-323">
+<connects>
+<connect gate="NMOS" pin="D" pad="3"/>
+<connect gate="NMOS" pin="G" pad="1"/>
+<connect gate="NMOS" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="PFET" prefix="Q">
@@ -1504,7 +1519,7 @@ Switches electrical signals</description>
 &lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13231”&gt;SparkFun ESP8266 Thing&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="LABELED-PMOS" x="0" y="0"/>
+<gate name="G$1" symbol="PFET" x="0" y="0"/>
 </gates>
 <devices>
 <device name="-IRLML2244" package="SOT23-3">

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.1">
+<eagle version="8.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="4" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.65" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -439,8 +439,8 @@
 <smd name="NC2" x="3.4" y="1.5" dx="3.4" dy="1.6" layer="1" rot="R90"/>
 <text x="-1.397" y="1.778" size="0.6096" layer="25" ratio="20">&gt;NAME</text>
 <text x="-1.651" y="0.635" size="0.6096" layer="27" ratio="20">&gt;VALUE</text>
-<wire x1="-4.2418" y1="3.4798" x2="4.2672" y2="3.4798" width="0.0762" layer="21"/>
-<text x="-2.8956" y="3.5814" size="0.254" layer="108">Place this line at the edge of the board</text>
+<wire x1="-4.2418" y1="3.3401" x2="4.2672" y2="3.3401" width="0.0762" layer="21"/>
+<text x="-3.9624" y="3.5052" size="0.254" layer="108">Place the edge of this line at the edge of the board</text>
 </package>
 <package name="1X02_BIG">
 <description>&lt;h3&gt;Plated Through Hole&lt;/h3&gt;
@@ -4518,11 +4518,11 @@ Holes are offset 0.005" to lock pins in place during soldering.
 <wire x1="-5" y1="-1.45" x2="5" y2="-1.45" width="0.127" layer="108"/>
 <wire x1="-3.81" y1="-1.2192" x2="-3.81" y2="2.5908" width="0.127" layer="21"/>
 <wire x1="-3.81" y1="2.5908" x2="-3.7592" y2="2.6416" width="0.127" layer="21"/>
-<wire x1="-3.7592" y1="2.6416" x2="-1.7526" y2="2.6416" width="0.127" layer="21"/>
-<wire x1="-1.7526" y1="2.6416" x2="-1.7526" y2="2.9718" width="0.127" layer="21"/>
-<wire x1="-1.7526" y1="2.9718" x2="1.7526" y2="2.9718" width="0.127" layer="21"/>
-<wire x1="1.7526" y1="2.9718" x2="1.7526" y2="2.667" width="0.127" layer="21"/>
-<wire x1="1.7526" y1="2.667" x2="3.7846" y2="2.667" width="0.127" layer="21"/>
+<wire x1="-3.7592" y1="2.6416" x2="-1.7526" y2="2.6416" width="0.127" layer="108"/>
+<wire x1="-1.7526" y1="2.6416" x2="-1.7526" y2="2.9718" width="0.127" layer="108"/>
+<wire x1="-1.7526" y1="2.9718" x2="1.7526" y2="2.9718" width="0.127" layer="108"/>
+<wire x1="1.7526" y1="2.9718" x2="1.7526" y2="2.667" width="0.127" layer="108"/>
+<wire x1="1.7526" y1="2.667" x2="3.7846" y2="2.667" width="0.127" layer="108"/>
 <wire x1="3.7846" y1="2.667" x2="3.9624" y2="2.6162" width="0.127" layer="21"/>
 <wire x1="3.9624" y1="2.6162" x2="3.9878" y2="-1.0668" width="0.127" layer="21"/>
 <wire x1="3.9878" y1="-1.0668" x2="3.9878" y2="-1.0922" width="0.127" layer="21"/>
@@ -4985,14 +4985,15 @@ Holes are offset 0.005" from center, locking pins in place during soldering.
 <wire x1="-5" y1="-2.72" x2="5" y2="-2.72" width="0.127" layer="108"/>
 <wire x1="-3.81" y1="-2.4892" x2="-3.81" y2="1.3208" width="0.127" layer="21"/>
 <wire x1="-3.81" y1="1.3208" x2="-3.7592" y2="1.3716" width="0.127" layer="21"/>
-<wire x1="-3.7592" y1="1.3716" x2="-1.7526" y2="1.3716" width="0.127" layer="21"/>
-<wire x1="-1.7526" y1="1.3716" x2="-1.7526" y2="1.7018" width="0.127" layer="21"/>
+<wire x1="-3.7592" y1="1.3716" x2="-1.7526" y2="1.3716" width="0.127" layer="108"/>
+<wire x1="-1.7526" y1="1.3716" x2="-1.7526" y2="1.7018" width="0.127" layer="108"/>
 <wire x1="-1.7526" y1="1.7018" x2="1.7526" y2="1.7018" width="0.127" layer="21"/>
-<wire x1="1.7526" y1="1.7018" x2="1.7526" y2="1.397" width="0.127" layer="21"/>
-<wire x1="1.7526" y1="1.397" x2="3.7846" y2="1.397" width="0.127" layer="21"/>
+<wire x1="1.7526" y1="1.7018" x2="1.7526" y2="1.397" width="0.127" layer="108"/>
+<wire x1="1.7526" y1="1.397" x2="3.7846" y2="1.397" width="0.127" layer="108"/>
 <wire x1="3.7846" y1="1.397" x2="3.9624" y2="1.3462" width="0.127" layer="21"/>
 <wire x1="3.9624" y1="1.3462" x2="3.9878" y2="-2.3368" width="0.127" layer="21"/>
 <wire x1="3.9878" y1="-2.3368" x2="3.9878" y2="-2.3622" width="0.127" layer="21"/>
+<text x="-3.5052" y="-3.1496" size="0.3048" layer="108">Place this line at the edge of the board</text>
 </package>
 <package name="USB-MICRO-01.BIGGERPADS">
 <smd name="SOLDER-2" x="-1.2" y="-1.27" dx="1.9" dy="1.9" layer="1"/>
@@ -5030,14 +5031,15 @@ Holes are offset 0.005" from center, locking pins in place during soldering.
 <wire x1="-5" y1="-2.72" x2="5" y2="-2.72" width="0.127" layer="108"/>
 <wire x1="-3.81" y1="-2.4892" x2="-3.81" y2="1.3208" width="0.127" layer="21"/>
 <wire x1="-3.81" y1="1.3208" x2="-3.7592" y2="1.3716" width="0.127" layer="21"/>
-<wire x1="-3.7592" y1="1.3716" x2="-1.7526" y2="1.3716" width="0.127" layer="21"/>
-<wire x1="-1.7526" y1="1.3716" x2="-1.7526" y2="1.7018" width="0.127" layer="21"/>
-<wire x1="-1.7526" y1="1.7018" x2="1.7526" y2="1.7018" width="0.127" layer="21"/>
-<wire x1="1.7526" y1="1.7018" x2="1.7526" y2="1.397" width="0.127" layer="21"/>
-<wire x1="1.7526" y1="1.397" x2="3.7846" y2="1.397" width="0.127" layer="21"/>
+<wire x1="-3.7592" y1="1.3716" x2="-1.7526" y2="1.3716" width="0.127" layer="108"/>
+<wire x1="-1.7526" y1="1.3716" x2="-1.7526" y2="1.7018" width="0.127" layer="108"/>
+<wire x1="-1.7526" y1="1.7018" x2="1.7526" y2="1.7018" width="0.127" layer="108"/>
+<wire x1="1.7526" y1="1.7018" x2="1.7526" y2="1.397" width="0.127" layer="108"/>
+<wire x1="1.7526" y1="1.397" x2="3.7846" y2="1.397" width="0.127" layer="108"/>
 <wire x1="3.7846" y1="1.397" x2="3.9624" y2="1.3462" width="0.127" layer="21"/>
 <wire x1="3.9624" y1="1.3462" x2="3.9878" y2="-2.3368" width="0.127" layer="21"/>
 <wire x1="3.9878" y1="-2.3368" x2="3.9878" y2="-2.3622" width="0.127" layer="21"/>
+<text x="-3.4544" y="-3.2004" size="0.3048" layer="108">Place this line at the edge of the board</text>
 </package>
 <package name="USB-MICRO-01.BIGGERPADS.PWR">
 <smd name="SOLDER-2" x="-1.2" y="0" dx="1.9" dy="1.9" layer="1"/>
@@ -5072,14 +5074,15 @@ Holes are offset 0.005" from center, locking pins in place during soldering.
 <wire x1="-5" y1="-1.45" x2="5" y2="-1.45" width="0.127" layer="108"/>
 <wire x1="-3.81" y1="-1.2192" x2="-3.81" y2="2.5908" width="0.127" layer="21"/>
 <wire x1="-3.81" y1="2.5908" x2="-3.7592" y2="2.6416" width="0.127" layer="21"/>
-<wire x1="-3.7592" y1="2.6416" x2="-1.7526" y2="2.6416" width="0.127" layer="21"/>
-<wire x1="-1.7526" y1="2.6416" x2="-1.7526" y2="2.9718" width="0.127" layer="21"/>
-<wire x1="-1.7526" y1="2.9718" x2="1.7526" y2="2.9718" width="0.127" layer="21"/>
-<wire x1="1.7526" y1="2.9718" x2="1.7526" y2="2.667" width="0.127" layer="21"/>
-<wire x1="1.7526" y1="2.667" x2="3.7846" y2="2.667" width="0.127" layer="21"/>
+<wire x1="-3.7592" y1="2.6416" x2="-1.7526" y2="2.6416" width="0.127" layer="108"/>
+<wire x1="-1.7526" y1="2.6416" x2="-1.7526" y2="2.9718" width="0.127" layer="108"/>
+<wire x1="-1.4986" y1="2.9718" x2="1.4986" y2="2.9718" width="0.127" layer="21"/>
+<wire x1="1.7526" y1="2.9718" x2="1.7526" y2="2.667" width="0.127" layer="108"/>
+<wire x1="1.7526" y1="2.667" x2="3.7846" y2="2.667" width="0.127" layer="108"/>
 <wire x1="3.7846" y1="2.667" x2="3.9624" y2="2.6162" width="0.127" layer="21"/>
 <wire x1="3.9624" y1="2.6162" x2="3.9878" y2="-1.0668" width="0.127" layer="21"/>
 <wire x1="3.9878" y1="-1.0668" x2="3.9878" y2="-1.0922" width="0.127" layer="21"/>
+<text x="-3.4544" y="-1.9304" size="0.3048" layer="108">Place this line at the edge of the board</text>
 </package>
 <package name="USB.MICRO.MOUNDS">
 <smd name="SOLDER-2" x="-1.2" y="-1.27" dx="1.9" dy="1.9" layer="1"/>
@@ -5120,6 +5123,7 @@ Holes are offset 0.005" from center, locking pins in place during soldering.
 <wire x1="3.7846" y1="1.397" x2="3.9624" y2="1.3462" width="0.127" layer="21"/>
 <wire x1="3.9624" y1="1.3462" x2="3.9878" y2="-2.3368" width="0.127" layer="21"/>
 <wire x1="3.9878" y1="-2.3368" x2="3.9878" y2="-2.3622" width="0.127" layer="21"/>
+<text x="-3.4544" y="-3.2004" size="0.3048" layer="108">Place this line at the edge of the board</text>
 </package>
 <package name="FTDI_DEVICE">
 <pad name="DTR" x="-6.35" y="0" drill="1.016" diameter="1.8796"/>
@@ -5173,11 +5177,11 @@ Holes are offset 0.005" from center, locking pins in place during soldering.
 </package>
 <package name="FTDI.DEVICE.V2.NOLABELS.SMALLDIAMETER">
 <pad name="DTR" x="0" y="0" drill="0.762" diameter="1.27"/>
-<pad name="TXO" x="2.032" y="0" drill="0.762" diameter="1.27"/>
-<pad name="RXI" x="4.064" y="0" drill="0.762" diameter="1.27"/>
-<pad name="VCC" x="6.096" y="0" drill="0.762" diameter="1.27"/>
-<pad name="GND" x="8.128" y="0" drill="0.762" diameter="1.27"/>
-<wire x1="9.144" y1="-0.889" x2="9.144" y2="0.889" width="0.254" layer="21"/>
+<pad name="TXO" x="1.905" y="0" drill="0.762" diameter="1.27"/>
+<pad name="RXI" x="3.81" y="0" drill="0.762" diameter="1.27"/>
+<pad name="VCC" x="5.715" y="0" drill="0.762" diameter="1.27"/>
+<pad name="GND" x="7.62" y="0" drill="0.762" diameter="1.27"/>
+<wire x1="8.763" y1="-0.889" x2="8.763" y2="0.889" width="0.254" layer="21"/>
 </package>
 <package name="TP_11TH">
 <pad name="P$1" x="0" y="0" drill="0.3048" diameter="0.508" stop="no"/>
@@ -5981,6 +5985,24 @@ Holes are offset 0.005", to hold pins in place during soldering.
 <rectangle x1="17.526" y1="-0.254" x2="18.034" y2="0.254" layer="51"/>
 <text x="-1.27" y="1.397" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-1.27" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+<package name="MFN.690-W05-290-483">
+<smd name="P$1" x="0" y="0" dx="1.35" dy="0.4" layer="1" rot="R90"/>
+<smd name="P$2" x="0.65" y="0" dx="1.35" dy="0.4" layer="1" rot="R90"/>
+<smd name="P$3" x="1.3" y="0" dx="1.35" dy="0.4" layer="1" rot="R90"/>
+<smd name="P$4" x="-0.65" y="0" dx="1.35" dy="0.4" layer="1" rot="R90"/>
+<smd name="P$5" x="-1.3" y="0" dx="1.35" dy="0.4" layer="1" rot="R90"/>
+</package>
+<package name="1X02_SMALL">
+<pad name="P$1" x="-0.889" y="0" drill="0.508"/>
+<pad name="P$2" x="0.889" y="0" drill="0.508"/>
+</package>
+<package name="USB.MICRO.MUC-20PFFR-JS8C02">
+<smd name="P$1" x="0" y="0" dx="1.6" dy="0.4" layer="1" rot="R90"/>
+<smd name="P$2" x="0.65" y="0" dx="1.6" dy="0.4" layer="1" rot="R90"/>
+<smd name="P$3" x="1.3" y="0" dx="1.6" dy="0.4" layer="1" rot="R90"/>
+<smd name="P$4" x="-0.65" y="0" dx="1.6" dy="0.4" layer="1" rot="R90"/>
+<smd name="P$5" x="-1.3" y="0" dx="1.6" dy="0.4" layer="1" rot="R90"/>
 </package>
 </packages>
 <symbols>
@@ -6811,6 +6833,15 @@ Holes are offset 0.005", to hold pins in place during soldering.
 <technology name="">
 <attribute name="PROD_ID" value="CONN-13512"/>
 </technology>
+</technologies>
+</device>
+<device name="-SMALL" package="1X02_SMALL">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>

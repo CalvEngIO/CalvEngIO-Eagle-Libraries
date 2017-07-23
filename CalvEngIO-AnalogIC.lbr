@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.1">
+<eagle version="8.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -556,7 +556,7 @@ NS Package M08A</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="OP-QUAD">
+<deviceset name="OP-QUAD" prefix="OP" uservalue="yes">
 <description>General symbol and footprints for Quad Op Amps. Use with any standard general purpose op amp.</description>
 <gates>
 <gate name="G$1" symbol="OPAMP" x="-15.24" y="10.16"/>
@@ -834,7 +834,7 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="OP-DUAL" prefix="IC">
+<deviceset name="OP-DUAL" prefix="OP" uservalue="yes">
 <description>&lt;b&gt;Precision Micropower, Low Noise CMOS, Rail-to-Rail Input/Output Operational Amplifiers&lt;/b&gt;&lt;p&gt;
 Source: http://www.analog.com/static/imported-files/data_sheets/AD8603_8607_8609.pdf</description>
 <gates>
