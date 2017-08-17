@@ -792,8 +792,8 @@ Holes are offset 0.007" from center to hold pins in place during soldering.
 <wire x1="0.4" y1="0" x2="-0.3" y2="-0.5" width="0.127" layer="21"/>
 <wire x1="-0.3" y1="-0.5" x2="-0.3" y2="0.5" width="0.127" layer="21"/>
 <wire x1="-0.3" y1="0.5" x2="0.4" y2="0" width="0.127" layer="21"/>
-<text x="-2.9" y="1.1" size="1.27" layer="25">&gt;Name</text>
-<text x="-2.7" y="-2.3" size="1.27" layer="27">&gt;Value</text>
+<text x="-1.27" y="1.1" size="0.635" layer="25">&gt;Name</text>
+<text x="-1.27" y="-1.665" size="0.635" layer="27">&gt;Value</text>
 </package>
 <package name="PG-SOT-323">
 <smd name="3" x="0" y="0.8" dx="0.6" dy="0.8" layer="1"/>
