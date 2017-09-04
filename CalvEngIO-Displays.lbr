@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -307,6 +307,82 @@
 <text x="0" y="1.27" size="0.6096" layer="25" font="vector" ratio="20">&gt;Name</text>
 <text x="0" y="-1.27" size="0.6096" layer="27" font="vector" ratio="20" align="top-left">&gt;Value</text>
 </package>
+<package name="OLED-0.66-64X48.ORIENT2">
+<wire x1="18.05" y1="0.7" x2="-0.5" y2="0.7" width="0.127" layer="49"/>
+<wire x1="-0.5" y1="0.7" x2="-0.5" y2="-4.3" width="0.127" layer="49"/>
+<wire x1="-0.5" y1="-4.3" x2="3.09" y2="-4.3" width="0.127" layer="49"/>
+<wire x1="14.46" y1="-4.3" x2="18.05" y2="-4.3" width="0.127" layer="49"/>
+<wire x1="18.05" y1="-4.3" x2="18.05" y2="0.7" width="0.127" layer="49"/>
+<smd name="1" x="0" y="0" dx="0.35" dy="2" layer="1"/>
+<rectangle x1="17.39" y1="-0.8" x2="17.71" y2="0.7" layer="51" rot="R180"/>
+<rectangle x1="16.74" y1="-0.8" x2="17.06" y2="0.7" layer="51" rot="R180"/>
+<rectangle x1="16.09" y1="-0.8" x2="16.41" y2="0.7" layer="51" rot="R180"/>
+<rectangle x1="15.44" y1="-0.8" x2="15.76" y2="0.7" layer="51" rot="R180"/>
+<rectangle x1="14.79" y1="-0.8" x2="15.11" y2="0.7" layer="51" rot="R180"/>
+<rectangle x1="14.14" y1="-0.8" x2="14.46" y2="0.7" layer="51" rot="R180"/>
+<rectangle x1="13.49" y1="-0.8" x2="13.81" y2="0.7" layer="51" rot="R180"/>
+<rectangle x1="12.84" y1="-0.8" x2="13.16" y2="0.7" layer="51" rot="R180"/>
+<rectangle x1="12.19" y1="-0.8" x2="12.51" y2="0.7" layer="51" rot="R180"/>
+<rectangle x1="11.54" y1="-0.8" x2="11.86" y2="0.7" layer="51" rot="R180"/>
+<rectangle x1="10.89" y1="-0.8" x2="11.21" y2="0.7" layer="51" rot="R180"/>
+<rectangle x1="10.24" y1="-0.8" x2="10.56" y2="0.7" layer="51" rot="R180"/>
+<rectangle x1="9.59" y1="-0.8" x2="9.91" y2="0.7" layer="51" rot="R180"/>
+<rectangle x1="8.94" y1="-0.8" x2="9.26" y2="0.7" layer="51" rot="R180"/>
+<rectangle x1="8.29" y1="-0.8" x2="8.61" y2="0.7" layer="51" rot="R180"/>
+<rectangle x1="7.64" y1="-0.8" x2="7.96" y2="0.7" layer="51" rot="R180"/>
+<rectangle x1="6.99" y1="-0.8" x2="7.31" y2="0.7" layer="51" rot="R180"/>
+<rectangle x1="6.34" y1="-0.8" x2="6.66" y2="0.7" layer="51" rot="R180"/>
+<rectangle x1="5.69" y1="-0.8" x2="6.01" y2="0.7" layer="51" rot="R180"/>
+<rectangle x1="5.04" y1="-0.8" x2="5.36" y2="0.7" layer="51" rot="R180"/>
+<rectangle x1="4.39" y1="-0.8" x2="4.71" y2="0.7" layer="51" rot="R180"/>
+<rectangle x1="3.74" y1="-0.8" x2="4.06" y2="0.7" layer="51" rot="R180"/>
+<rectangle x1="3.09" y1="-0.8" x2="3.41" y2="0.7" layer="51" rot="R180"/>
+<rectangle x1="2.44" y1="-0.8" x2="2.76" y2="0.7" layer="51" rot="R180"/>
+<rectangle x1="1.79" y1="-0.8" x2="2.11" y2="0.7" layer="51" rot="R180"/>
+<rectangle x1="1.14" y1="-0.8" x2="1.46" y2="0.7" layer="51" rot="R180"/>
+<rectangle x1="0.49" y1="-0.8" x2="0.81" y2="0.7" layer="51" rot="R180"/>
+<rectangle x1="-0.16" y1="-0.8" x2="0.16" y2="0.7" layer="51" rot="R180"/>
+<smd name="2" x="0.65" y="0" dx="0.35" dy="2" layer="1"/>
+<smd name="3" x="1.3" y="0" dx="0.35" dy="2" layer="1"/>
+<smd name="4" x="1.95" y="0" dx="0.35" dy="2" layer="1"/>
+<smd name="5" x="2.6" y="0" dx="0.35" dy="2" layer="1"/>
+<smd name="6" x="3.25" y="0" dx="0.35" dy="2" layer="1"/>
+<smd name="7" x="3.9" y="0" dx="0.35" dy="2" layer="1"/>
+<smd name="8" x="4.55" y="0" dx="0.35" dy="2" layer="1"/>
+<smd name="9" x="5.2" y="0" dx="0.35" dy="2" layer="1"/>
+<smd name="10" x="5.85" y="0" dx="0.35" dy="2" layer="1"/>
+<smd name="11" x="6.5" y="0" dx="0.35" dy="2" layer="1"/>
+<smd name="12" x="7.15" y="0" dx="0.35" dy="2" layer="1"/>
+<smd name="13" x="7.8" y="0" dx="0.35" dy="2" layer="1"/>
+<smd name="14" x="8.45" y="0" dx="0.35" dy="2" layer="1"/>
+<smd name="15" x="9.1" y="0" dx="0.35" dy="2" layer="1"/>
+<smd name="16" x="9.75" y="0" dx="0.35" dy="2" layer="1"/>
+<smd name="17" x="10.4" y="0" dx="0.35" dy="2" layer="1"/>
+<smd name="18" x="11.05" y="0" dx="0.35" dy="2" layer="1"/>
+<smd name="19" x="11.7" y="0" dx="0.35" dy="2" layer="1"/>
+<smd name="20" x="12.35" y="0" dx="0.35" dy="2" layer="1"/>
+<smd name="21" x="13" y="0" dx="0.35" dy="2" layer="1"/>
+<smd name="22" x="13.65" y="0" dx="0.35" dy="2" layer="1"/>
+<smd name="23" x="14.3" y="0" dx="0.35" dy="2" layer="1"/>
+<smd name="24" x="14.95" y="0" dx="0.35" dy="2" layer="1"/>
+<smd name="25" x="15.6" y="0" dx="0.35" dy="2" layer="1"/>
+<smd name="26" x="16.25" y="0" dx="0.35" dy="2" layer="1"/>
+<smd name="27" x="16.9" y="0" dx="0.35" dy="2" layer="1"/>
+<smd name="28" x="17.55" y="0" dx="0.35" dy="2" layer="1"/>
+<wire x1="15.63" y1="-1.3" x2="15.63" y2="8.76" width="0.127" layer="52"/>
+<wire x1="15.63" y1="8.76" x2="2.21" y2="8.76" width="0.127" layer="52"/>
+<wire x1="2.21" y1="8.76" x2="2.21" y2="-1.3" width="0.127" layer="52"/>
+<wire x1="2.21" y1="-1.3" x2="15.63" y2="-1.3" width="0.127" layer="52"/>
+<text x="8.92" y="3.73" size="0.8128" layer="109" font="vector" rot="R180" align="center">Active Area 0.66"
+64 x 48 Pixels
+(Facing Top)</text>
+<text x="0" y="1.27" size="0.6096" layer="25" font="vector" ratio="20">&gt;Name</text>
+<text x="0" y="-1.27" size="0.6096" layer="27" font="vector" ratio="20" align="top-left">&gt;Value</text>
+<wire x1="-0.5" y1="-5.3" x2="-0.5" y2="13.5" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="13.5" x2="18.1" y2="13.5" width="0.127" layer="21"/>
+<wire x1="18.1" y1="13.5" x2="18.1" y2="-5.3" width="0.127" layer="21"/>
+<wire x1="18.1" y1="-5.3" x2="-0.5" y2="-5.3" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="OLED0.66">
@@ -410,6 +486,41 @@ Monochrome</description>
 </technologies>
 </device>
 <device name="NOHOLES" package="OLED-0.66-64X48.NOHOLES">
+<connects>
+<connect gate="G1" pin="!CS!" pad="11"/>
+<connect gate="G1" pin="!RESET!" pad="12"/>
+<connect gate="G1" pin="BS1" pad="9"/>
+<connect gate="G1" pin="BS2" pad="10"/>
+<connect gate="G1" pin="C1N" pad="5"/>
+<connect gate="G1" pin="C1P" pad="4"/>
+<connect gate="G1" pin="C2N" pad="3"/>
+<connect gate="G1" pin="C2P" pad="2"/>
+<connect gate="G1" pin="D/!C!" pad="13"/>
+<connect gate="G1" pin="D0/SCK" pad="16"/>
+<connect gate="G1" pin="D1/SDI/MOSI" pad="17"/>
+<connect gate="G1" pin="D2/SDO/MISO" pad="18"/>
+<connect gate="G1" pin="D3" pad="19"/>
+<connect gate="G1" pin="D4" pad="20"/>
+<connect gate="G1" pin="D5" pad="21"/>
+<connect gate="G1" pin="D6" pad="22"/>
+<connect gate="G1" pin="D7" pad="23"/>
+<connect gate="G1" pin="E/!RD!" pad="15"/>
+<connect gate="G1" pin="GND@1" pad="1"/>
+<connect gate="G1" pin="GND@2" pad="28"/>
+<connect gate="G1" pin="IREF" pad="24"/>
+<connect gate="G1" pin="R/!W!" pad="14"/>
+<connect gate="G1" pin="VBAT" pad="6"/>
+<connect gate="G1" pin="VCC" pad="26"/>
+<connect gate="G1" pin="VCOMH" pad="25"/>
+<connect gate="G1" pin="VDD" pad="8"/>
+<connect gate="G1" pin="VLSS" pad="27"/>
+<connect gate="G1" pin="VSS" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name=".ORIENT2" package="OLED-0.66-64X48.ORIENT2">
 <connects>
 <connect gate="G1" pin="!CS!" pad="11"/>
 <connect gate="G1" pin="!RESET!" pad="12"/>
