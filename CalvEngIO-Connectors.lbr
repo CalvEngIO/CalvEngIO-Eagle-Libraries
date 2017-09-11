@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.1">
+<eagle version="8.3.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -6936,6 +6936,7 @@ Alternate pin configuration
 <smd name="10" x="5.4864" y="0" dx="2" dy="0.35051875" layer="1" rot="R90"/>
 <smd name="11" x="6.096" y="0" dx="2" dy="0.35051875" layer="1" rot="R90"/>
 <smd name="12" x="6.7056" y="0" dx="2" dy="0.35051875" layer="1" rot="R90"/>
+<wire x1="-0.3556" y1="1.0668" x2="-0.3556" y2="-1.0668" width="0.127" layer="21"/>
 </package>
 <package name="POWER.TO.MCU.MAIN.BOARD">
 <smd name="1" x="0" y="0" dx="2" dy="0.35051875" layer="1" rot="R90"/>
@@ -6951,6 +6952,7 @@ Alternate pin configuration
 <smd name="9" x="4.8768" y="0" dx="2" dy="0.35051875" layer="1" rot="R90"/>
 <smd name="10" x="5.4864" y="0" dx="2" dy="0.35051875" layer="1" rot="R90"/>
 <smd name="11" x="6.096" y="0" dx="2" dy="0.35051875" layer="1" rot="R90"/>
+<wire x1="-0.4064" y1="1.0668" x2="-0.4064" y2="-1.0668" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -7615,22 +7617,22 @@ Alternate pin configuration
 </symbol>
 <symbol name="POWER.TO.MCU.MAIN.BOARD">
 <wire x1="5.08" y1="10.16" x2="5.08" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-20.32" x2="-7.62" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-20.32" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="10.16" x2="5.08" y2="10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-20.32" x2="-10.16" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-20.32" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="10.16" x2="5.08" y2="10.16" width="0.254" layer="94"/>
 <pin name="V+" x="10.16" y="7.62" length="middle" rot="R180"/>
-<pin name="CHRG" x="10.16" y="0" length="middle" rot="R180"/>
-<pin name="SCL" x="10.16" y="-2.54" length="middle" rot="R180"/>
-<pin name="SDA" x="10.16" y="-5.08" length="middle" rot="R180"/>
-<pin name="BATT.INT" x="10.16" y="-7.62" length="middle" rot="R180"/>
-<pin name="BUZZ" x="10.16" y="-10.16" length="middle" rot="R180"/>
-<pin name="MOTOR" x="10.16" y="-12.7" length="middle" rot="R180"/>
-<pin name="GND" x="10.16" y="-17.78" length="middle" rot="R180"/>
+<pin name="DTR" x="10.16" y="0" length="middle" rot="R180"/>
+<pin name="TXO" x="10.16" y="-2.54" length="middle" rot="R180"/>
+<pin name="RXI" x="10.16" y="-5.08" length="middle" rot="R180"/>
+<pin name="BUZZ" x="10.16" y="-7.62" length="middle" rot="R180"/>
+<pin name="MOTOR" x="10.16" y="-10.16" length="middle" rot="R180"/>
+<pin name="CHRG.STAT" x="10.16" y="-12.7" length="middle" rot="R180"/>
+<pin name="SDA" x="10.16" y="-17.78" length="middle" rot="R180"/>
 <text x="-7.62" y="11.43" size="2.54" layer="95">&gt;Name</text>
 <text x="-7.62" y="-24.13" size="2.54" layer="96">&gt;Value</text>
-<pin name="D-" x="10.16" y="5.08" length="middle" rot="R180"/>
-<pin name="D+" x="10.16" y="2.54" length="middle" rot="R180"/>
-<pin name="VBATT" x="10.16" y="-15.24" length="middle" rot="R180"/>
+<pin name="GND" x="10.16" y="5.08" length="middle" rot="R180"/>
+<pin name="BATT" x="10.16" y="2.54" length="middle" rot="R180"/>
+<pin name="SCL" x="10.16" y="-15.24" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -10997,29 +10999,18 @@ push-push type</description>
 <devices>
 <device name="" package="POWER.TO.MCU.MAIN.BOARD">
 <connects>
-<connect gate="G$1" pin="BATT.INT" pad="7"/>
-<connect gate="G$1" pin="BUZZ" pad="8"/>
-<connect gate="G$1" pin="CHRG" pad="4"/>
-<connect gate="G$1" pin="D+" pad="3"/>
-<connect gate="G$1" pin="D-" pad="2"/>
-<connect gate="G$1" pin="GND" pad="11"/>
-<connect gate="G$1" pin="MOTOR" pad="9"/>
-<connect gate="G$1" pin="SCL" pad="5"/>
-<connect gate="G$1" pin="SDA" pad="6"/>
+<connect gate="G$1" pin="BATT" pad="3"/>
+<connect gate="G$1" pin="BUZZ" pad="7"/>
+<connect gate="G$1" pin="CHRG.STAT" pad="9"/>
+<connect gate="G$1" pin="DTR" pad="4"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="MOTOR" pad="8"/>
+<connect gate="G$1" pin="RXI" pad="6"/>
+<connect gate="G$1" pin="SCL" pad="10"/>
+<connect gate="G$1" pin="SDA" pad="11"/>
+<connect gate="G$1" pin="TXO" pad="5"/>
 <connect gate="G$1" pin="V+" pad="1"/>
-<connect gate="G$1" pin="VBATT" pad="10"/>
 </connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MCU.TO.PPG.MAIN.BOARD">
-<gates>
-</gates>
-<devices>
-<device name="">
 <technologies>
 <technology name=""/>
 </technologies>

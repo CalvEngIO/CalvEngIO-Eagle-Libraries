@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.1">
+<eagle version="8.3.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -2901,9 +2901,9 @@ PATENTS PENDING 04.01.2015&lt;br/&gt;&lt;/p&gt;
 <smd name="15" x="0" y="-7" dx="1" dy="0.254" layer="1"/>
 <smd name="16" x="0" y="-7.5" dx="1" dy="0.254" layer="1"/>
 <smd name="17" x="0" y="-8" dx="1" dy="0.254" layer="1"/>
-<smd name="18" x="0" y="-8.5" dx="1" dy="0.254" layer="1"/>
+<smd name="18" x="-0.075" y="-8.5" dx="0.85" dy="0.254" layer="1"/>
 <smd name="19" x="0" y="-9" dx="1" dy="0.254" layer="1"/>
-<smd name="20" x="1.055" y="-9.29" dx="1" dy="0.254" layer="1" rot="R90"/>
+<smd name="20" x="1.055" y="-9.365" dx="0.85" dy="0.254" layer="1" rot="R90"/>
 <smd name="21" x="1.555" y="-9.29" dx="1" dy="0.254" layer="1" rot="R90"/>
 <smd name="22" x="2.055" y="-9.29" dx="1" dy="0.254" layer="1" rot="R90"/>
 <smd name="23" x="2.555" y="-9.29" dx="1" dy="0.254" layer="1" rot="R90"/>
@@ -2912,9 +2912,9 @@ PATENTS PENDING 04.01.2015&lt;br/&gt;&lt;/p&gt;
 <smd name="26" x="4.055" y="-9.29" dx="1" dy="0.254" layer="1" rot="R90"/>
 <smd name="27" x="4.555" y="-9.29" dx="1" dy="0.254" layer="1" rot="R90"/>
 <smd name="28" x="5.055" y="-9.29" dx="1" dy="0.254" layer="1" rot="R90"/>
-<smd name="29" x="5.555" y="-9.29" dx="1" dy="0.254" layer="1" rot="R90"/>
+<smd name="29" x="5.555" y="-9.365" dx="0.85" dy="0.254" layer="1" rot="R90"/>
 <smd name="30" x="6.61" y="-9" dx="1" dy="0.254" layer="1"/>
-<smd name="31" x="6.61" y="-8.5" dx="1" dy="0.254" layer="1"/>
+<smd name="31" x="6.685" y="-8.5" dx="0.85" dy="0.254" layer="1"/>
 <smd name="32" x="6.61" y="-8" dx="1" dy="0.254" layer="1"/>
 <smd name="33" x="6.61" y="-7.5" dx="1" dy="0.254" layer="1"/>
 <smd name="34" x="6.61" y="-7" dx="1" dy="0.254" layer="1"/>
@@ -2945,11 +2945,10 @@ PATENTS PENDING 04.01.2015&lt;br/&gt;&lt;/p&gt;
 <vertex x="1.45" y="-5.84"/>
 <vertex x="3.15" y="-5.84"/>
 </polygon>
-<wire x1="0.7874" y1="0.508" x2="0.762" y2="0.508" width="0.127" layer="108"/>
 <wire x1="0.762" y1="0.508" x2="0.762" y2="-3.1242" width="0.127" layer="108"/>
-<wire x1="0.762" y1="-3.1242" x2="6.8072" y2="-3.1242" width="0.127" layer="108"/>
-<wire x1="6.8072" y1="-3.1242" x2="6.8072" y2="0.508" width="0.127" layer="108"/>
-<wire x1="6.8072" y1="0.508" x2="0.7874" y2="0.508" width="0.127" layer="108"/>
+<wire x1="0.762" y1="-3.1242" x2="8.636" y2="-3.1242" width="0.127" layer="108"/>
+<wire x1="8.636" y1="-3.1242" x2="8.636" y2="0.508" width="0.127" layer="108"/>
+<wire x1="8.636" y1="0.508" x2="0.762" y2="0.508" width="0.127" layer="108"/>
 <text x="1.7018" y="-2.159" size="0.508" layer="108">No copper or
 components
 in any layer</text>
