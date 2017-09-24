@@ -10574,7 +10574,7 @@ This footprint was designed to help hold the alignment of a through-hole compone
 </device>
 </devices>
 </deviceset>
-<deviceset name="MICRO.USB.MUC-20PFFR-JS8C02" prefix="USB" uservalue="yes">
+<deviceset name="USB.MICRO.MUC-20PFFR-JS8C02" prefix="USB" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="USB-MICRO-01" x="2.54" y="0"/>
 </gates>
