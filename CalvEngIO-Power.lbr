@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.2">
+<eagle version="9.0.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -912,6 +912,94 @@ part number 2062-2P from STA</description>
 <text x="0.635" y="-3.175" size="0.4064" layer="25">&gt;NAME</text>
 <text x="0.635" y="-1.905" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
+<package name="TO-220-7">
+<pad name="4" x="-2.54" y="0" drill="1.016" shape="long"/>
+<pad name="6" x="-2.54" y="-2.54" drill="1.016" shape="long"/>
+<pad name="2" x="-2.54" y="2.54" drill="1.016" shape="long"/>
+<pad name="3" x="2.54" y="1.27" drill="1.016" shape="long"/>
+<pad name="5" x="2.54" y="-1.27" drill="1.016" shape="long"/>
+<pad name="1" x="2.54" y="3.81" drill="1.016" shape="long"/>
+<pad name="7" x="2.54" y="-3.81" drill="1.016" shape="long"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-5.08" x2="-4.318" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="-4.318" y1="-5.08" x2="-4.572" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="-4.572" y1="-5.08" x2="-5.08" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="5.08" y1="5.08" x2="-4.318" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-4.318" y1="5.08" x2="-4.572" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-4.572" y1="5.08" x2="-5.08" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.127" layer="21"/>
+<text x="-5.08" y="5.461" size="1.27" layer="25">&gt;Name</text>
+<text x="-5.08" y="-6.731" size="1.27" layer="27">&gt;Value</text>
+<text x="1.27" y="5.334" size="0.381" layer="51">formed legs</text>
+<wire x1="-4.826" y1="5.08" x2="-4.826" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="-4.572" y1="5.08" x2="-4.572" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="-4.318" y1="-5.08" x2="-4.318" y2="5.08" width="0.127" layer="21"/>
+<text x="-5.334" y="-2.032" size="0.635" layer="51" rot="R90">Metal Plate</text>
+</package>
+<package name="TO-220-7-W.HEATSINK.504222B00000G">
+<pad name="4" x="-2.54" y="0" drill="1.016" shape="long"/>
+<pad name="6" x="-2.54" y="-2.54" drill="1.016" shape="long"/>
+<pad name="2" x="-2.54" y="2.54" drill="1.016" shape="long"/>
+<pad name="3" x="2.54" y="1.27" drill="1.016" shape="long"/>
+<pad name="5" x="2.54" y="-1.27" drill="1.016" shape="long"/>
+<pad name="1" x="2.54" y="3.81" drill="1.016" shape="long"/>
+<pad name="7" x="2.54" y="-3.81" drill="1.016" shape="long"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-5.08" x2="-4.318" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="-4.318" y1="-5.08" x2="-4.572" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="-4.572" y1="-5.08" x2="-5.08" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="5.08" y1="5.08" x2="-4.318" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-4.318" y1="5.08" x2="-4.572" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-4.572" y1="5.08" x2="-5.08" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.127" layer="21"/>
+<text x="-3.81" y="5.461" size="1.27" layer="25">&gt;Name</text>
+<text x="-3.81" y="-6.731" size="1.27" layer="27">&gt;Value</text>
+<text x="2.54" y="5.334" size="0.381" layer="51">formed legs</text>
+<wire x1="-4.826" y1="5.08" x2="-4.826" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="-4.572" y1="5.08" x2="-4.572" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="-4.318" y1="-5.08" x2="-4.318" y2="5.08" width="0.127" layer="21"/>
+<text x="-14.224" y="0.508" size="1.016" layer="51" font="vector" ratio="15">Heat Sink</text>
+<wire x1="-5.08" y1="9.906" x2="-5.08" y2="-9.906" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-9.906" x2="-15.875" y2="-9.906" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="9.906" x2="-15.875" y2="9.906" width="0.127" layer="21"/>
+<wire x1="-15.875" y1="9.906" x2="-15.875" y2="-9.906" width="0.127" layer="21"/>
+</package>
+<package name="TO-220-7-W.HEATSINK.RA-T2X-51E">
+<pad name="4" x="-2.54" y="0" drill="1.016" shape="long"/>
+<pad name="6" x="-2.54" y="-2.54" drill="1.016" shape="long"/>
+<pad name="2" x="-2.54" y="2.54" drill="1.016" shape="long"/>
+<pad name="3" x="2.54" y="1.27" drill="1.016" shape="long"/>
+<pad name="5" x="2.54" y="-1.27" drill="1.016" shape="long"/>
+<pad name="1" x="2.54" y="3.81" drill="1.016" shape="long"/>
+<pad name="7" x="2.54" y="-3.81" drill="1.016" shape="long"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-5.08" x2="-4.318" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="-4.318" y1="-5.08" x2="-4.572" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="-4.572" y1="-5.08" x2="-5.08" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="5.08" y1="5.08" x2="-4.318" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-4.318" y1="5.08" x2="-4.572" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-4.572" y1="5.08" x2="-5.08" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.127" layer="21"/>
+<text x="-3.81" y="5.461" size="1.27" layer="25">&gt;Name</text>
+<text x="-3.81" y="-6.731" size="1.27" layer="27">&gt;Value</text>
+<text x="2.54" y="5.334" size="0.381" layer="51">formed legs</text>
+<wire x1="-4.826" y1="5.08" x2="-4.826" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="-4.572" y1="5.08" x2="-4.572" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="-4.318" y1="-5.08" x2="-4.318" y2="5.08" width="0.127" layer="21"/>
+<text x="-15.494" y="0.508" size="1.016" layer="51" font="vector" ratio="15">Heat Sink</text>
+<wire x1="-5.08" y1="20.955" x2="-5.08" y2="15.24" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="15.24" x2="-5.08" y2="-15.24" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-15.24" x2="-5.08" y2="-20.955" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-20.955" x2="-17.78" y2="-20.955" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="20.955" x2="-17.78" y2="20.955" width="0.127" layer="21"/>
+<wire x1="-17.78" y1="20.955" x2="-17.78" y2="-20.955" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-20.955" x2="7.62" y2="-20.955" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="20.955" x2="7.62" y2="20.955" width="0.127" layer="21"/>
+<wire x1="7.62" y1="20.955" x2="7.62" y2="15.24" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-15.24" x2="7.62" y2="-20.955" width="0.127" layer="21"/>
+<wire x1="7.62" y1="15.24" x2="-5.08" y2="15.24" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-15.24" x2="-5.08" y2="-15.24" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="78XX-1">
@@ -1119,6 +1207,20 @@ part number 2062-2P from STA</description>
 <wire x1="5.08" y1="15.24" x2="5.08" y2="10.16" width="0.1524" layer="94"/>
 <wire x1="5.08" y1="10.16" x2="0" y2="10.16" width="0.1524" layer="94"/>
 <wire x1="0" y1="10.16" x2="0" y2="8.89" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="LM2678">
+<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<pin name="IN" x="-12.7" y="2.54" length="middle"/>
+<pin name="EN" x="-12.7" y="0" length="middle"/>
+<pin name="CB" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="OUT" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<pin name="GND" x="-12.7" y="-2.54" length="middle"/>
+<pin name="FB" x="12.7" y="2.54" length="middle" rot="R180"/>
+<text x="-7.62" y="6.35" size="1.778" layer="95">&gt;Name</text>
+<text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1349,7 +1451,7 @@ http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf&lt;/il&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="AP2125">
+<deviceset name="AP2125" prefix="LDO">
 <gates>
 <gate name="G$1" symbol="V-REG" x="0" y="0"/>
 </gates>
@@ -1417,6 +1519,52 @@ http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf&lt;/il&gt;
 <attribute name="PROD_ID" value="IC-11776" constant="no"/>
 <attribute name="VALUE" value="INA169" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LM2678" prefix="REG" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="LM2678" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO-220-7">
+<connects>
+<connect gate="G$1" pin="CB" pad="3"/>
+<connect gate="G$1" pin="EN" pad="7"/>
+<connect gate="G$1" pin="FB" pad="6"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="IN" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name=".HS.504222B00000G" package="TO-220-7-W.HEATSINK.504222B00000G">
+<connects>
+<connect gate="G$1" pin="CB" pad="3"/>
+<connect gate="G$1" pin="EN" pad="7"/>
+<connect gate="G$1" pin="FB" pad="6"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="IN" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name=".HS.RA-T2X-51E" package="TO-220-7-W.HEATSINK.RA-T2X-51E">
+<connects>
+<connect gate="G$1" pin="CB" pad="3"/>
+<connect gate="G$1" pin="EN" pad="7"/>
+<connect gate="G$1" pin="FB" pad="6"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="IN" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
