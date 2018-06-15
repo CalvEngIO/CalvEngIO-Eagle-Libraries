@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -1451,10 +1451,8 @@ type 0207, grid 10 mm</description>
 <wire x1="0" y1="-1.27" x2="-1.27" y2="-1.27" width="0.2032" layer="21"/>
 <wire x1="6.985" y1="0.635" x2="6.985" y2="-0.635" width="0.2032" layer="21"/>
 <pad name="1" x="-0.635" y="0" drill="1.27" diameter="2.159" rot="R90"/>
-<pad name="2" x="2.54" y="0" drill="1.27" diameter="2.159" rot="R90"/>
 <pad name="3" x="5.715" y="0" drill="1.27" diameter="2.159" rot="R90"/>
 <rectangle x1="5.461" y1="-0.254" x2="5.969" y2="0.254" layer="51"/>
-<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
 <rectangle x1="-0.889" y1="-0.254" x2="-0.381" y2="0.254" layer="51"/>
 <text x="-1.905" y="1.397" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-1.905" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
@@ -1664,7 +1662,6 @@ type 0207, grid 10 mm</description>
 <wire x1="7.62" y1="2.54" x2="6.35" y2="3.81" width="0.1524" layer="94" curve="-90" cap="flat"/>
 <wire x1="7.62" y1="2.54" x2="6.35" y2="1.27" width="0.1524" layer="94" curve="90" cap="flat"/>
 <wire x1="7.62" y1="0" x2="6.35" y2="1.27" width="0.1524" layer="94" curve="-90" cap="flat"/>
-<pin name="CT" x="10.16" y="7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="-" x="10.16" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <wire x1="7.62" y1="15.24" x2="6.35" y2="13.97" width="0.1524" layer="94" curve="90" cap="flat"/>
 <wire x1="7.62" y1="12.7" x2="6.35" y2="13.97" width="0.1524" layer="94" curve="-90" cap="flat"/>
@@ -2396,7 +2393,6 @@ type 0207, grid 10 mm</description>
 <connects>
 <connect gate="G$1" pin="+" pad="1"/>
 <connect gate="G$1" pin="-" pad="3"/>
-<connect gate="G$1" pin="CT" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>

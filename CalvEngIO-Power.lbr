@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -914,12 +914,12 @@ part number 2062-2P from STA</description>
 </package>
 <package name="TO-220-7">
 <pad name="4" x="-2.54" y="0" drill="1.016" shape="long"/>
-<pad name="6" x="-2.54" y="-2.54" drill="1.016" shape="long"/>
-<pad name="2" x="-2.54" y="2.54" drill="1.016" shape="long"/>
-<pad name="3" x="2.54" y="1.27" drill="1.016" shape="long"/>
-<pad name="5" x="2.54" y="-1.27" drill="1.016" shape="long"/>
-<pad name="1" x="2.54" y="3.81" drill="1.016" shape="long"/>
-<pad name="7" x="2.54" y="-3.81" drill="1.016" shape="long"/>
+<pad name="2" x="-2.54" y="-2.54" drill="1.016" shape="long"/>
+<pad name="6" x="-2.54" y="2.54" drill="1.016" shape="long"/>
+<pad name="5" x="2.54" y="1.27" drill="1.016" shape="long"/>
+<pad name="3" x="2.54" y="-1.27" drill="1.016" shape="long"/>
+<pad name="7" x="2.54" y="3.81" drill="1.016" shape="long"/>
+<pad name="1" x="2.54" y="-3.81" drill="1.016" shape="long"/>
 <wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.127" layer="21"/>
 <wire x1="5.08" y1="-5.08" x2="-4.318" y2="-5.08" width="0.127" layer="21"/>
 <wire x1="-4.318" y1="-5.08" x2="-4.572" y2="-5.08" width="0.127" layer="21"/>
@@ -938,12 +938,12 @@ part number 2062-2P from STA</description>
 </package>
 <package name="TO-220-7-W.HEATSINK.504222B00000G">
 <pad name="4" x="-2.54" y="0" drill="1.016" shape="long"/>
-<pad name="6" x="-2.54" y="-2.54" drill="1.016" shape="long"/>
-<pad name="2" x="-2.54" y="2.54" drill="1.016" shape="long"/>
-<pad name="3" x="2.54" y="1.27" drill="1.016" shape="long"/>
-<pad name="5" x="2.54" y="-1.27" drill="1.016" shape="long"/>
-<pad name="1" x="2.54" y="3.81" drill="1.016" shape="long"/>
-<pad name="7" x="2.54" y="-3.81" drill="1.016" shape="long"/>
+<pad name="2" x="-2.54" y="-2.54" drill="1.016" shape="long"/>
+<pad name="6" x="-2.54" y="2.54" drill="1.016" shape="long"/>
+<pad name="5" x="2.54" y="1.27" drill="1.016" shape="long"/>
+<pad name="3" x="2.54" y="-1.27" drill="1.016" shape="long"/>
+<pad name="7" x="2.54" y="3.81" drill="1.016" shape="long"/>
+<pad name="1" x="2.54" y="-3.81" drill="1.016" shape="long"/>
 <wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.127" layer="21"/>
 <wire x1="5.08" y1="-5.08" x2="-4.318" y2="-5.08" width="0.127" layer="21"/>
 <wire x1="-4.318" y1="-5.08" x2="-4.572" y2="-5.08" width="0.127" layer="21"/>
@@ -966,12 +966,12 @@ part number 2062-2P from STA</description>
 </package>
 <package name="TO-220-7-W.HEATSINK.RA-T2X-51E">
 <pad name="4" x="-2.54" y="0" drill="1.016" shape="long"/>
-<pad name="6" x="-2.54" y="-2.54" drill="1.016" shape="long"/>
-<pad name="2" x="-2.54" y="2.54" drill="1.016" shape="long"/>
-<pad name="3" x="2.54" y="1.27" drill="1.016" shape="long"/>
-<pad name="5" x="2.54" y="-1.27" drill="1.016" shape="long"/>
-<pad name="1" x="2.54" y="3.81" drill="1.016" shape="long"/>
-<pad name="7" x="2.54" y="-3.81" drill="1.016" shape="long"/>
+<pad name="2" x="-2.54" y="-2.54" drill="1.016" shape="long"/>
+<pad name="6" x="-2.54" y="2.54" drill="1.016" shape="long"/>
+<pad name="5" x="2.54" y="1.27" drill="1.016" shape="long"/>
+<pad name="3" x="2.54" y="-1.27" drill="1.016" shape="long"/>
+<pad name="7" x="2.54" y="3.81" drill="1.016" shape="long"/>
+<pad name="1" x="2.54" y="-3.81" drill="1.016" shape="long"/>
 <wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.127" layer="21"/>
 <wire x1="5.08" y1="-5.08" x2="-4.318" y2="-5.08" width="0.127" layer="21"/>
 <wire x1="-4.318" y1="-5.08" x2="-4.572" y2="-5.08" width="0.127" layer="21"/>
@@ -988,7 +988,9 @@ part number 2062-2P from STA</description>
 <wire x1="-4.318" y1="-5.08" x2="-4.318" y2="5.08" width="0.127" layer="21"/>
 <text x="-15.494" y="0.508" size="1.016" layer="51" font="vector" ratio="15">Heat Sink</text>
 <wire x1="-5.08" y1="20.955" x2="-5.08" y2="15.24" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="15.24" x2="-5.08" y2="-15.24" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="15.24" x2="-5.08" y2="10.16" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="10.16" x2="-5.08" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-10.16" x2="-5.08" y2="-15.24" width="0.127" layer="21"/>
 <wire x1="-5.08" y1="-15.24" x2="-5.08" y2="-20.955" width="0.127" layer="21"/>
 <wire x1="-5.08" y1="-20.955" x2="-17.78" y2="-20.955" width="0.127" layer="21"/>
 <wire x1="-5.08" y1="20.955" x2="-17.78" y2="20.955" width="0.127" layer="21"/>
@@ -999,6 +1001,12 @@ part number 2062-2P from STA</description>
 <wire x1="7.62" y1="-15.24" x2="7.62" y2="-20.955" width="0.127" layer="21"/>
 <wire x1="7.62" y1="15.24" x2="-5.08" y2="15.24" width="0.127" layer="21"/>
 <wire x1="7.62" y1="-15.24" x2="-5.08" y2="-15.24" width="0.127" layer="21"/>
+<hole x="-5.08" y="12.7" drill="2.5"/>
+<hole x="-5.08" y="-12.7" drill="2.5"/>
+<wire x1="-5.08" y1="10.16" x2="16.51" y2="10.16" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-10.16" x2="16.51" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="10.16" x2="-26.67" y2="10.16" width="0.127" layer="21"/>
+<wire x1="-26.67" y1="-10.16" x2="-5.08" y2="-10.16" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
