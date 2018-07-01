@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.1">
+<eagle version="9.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -539,7 +539,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="V+">
+<deviceset name="V+" prefix="SUPPLY">
 <gates>
 <gate name="G$1" symbol="V+" x="0" y="0"/>
 </gates>
@@ -563,7 +563,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="VLIPO">
+<deviceset name="VLIPO" prefix="SUPPLY">
 <gates>
 <gate name="G$1" symbol="VLIPO" x="0" y="0"/>
 </gates>
