@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.1">
+<eagle version="9.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9437,7 +9437,7 @@ Description:
 </device>
 </devices>
 </deviceset>
-<deviceset name="JST_2MM_MALE" prefix="J" uservalue="yes">
+<deviceset name="JST_2MM_MALE" prefix="LIPO" uservalue="yes">
 <description>&lt;h3&gt;JST 2MM MALE RA CONNECTOR&lt;/h3&gt;
 Two pin, compact surface mount connector. Commonly used as a battery input connection point. We really like the solid locking feeling and high current rating on these small connectors. We use these all the time as battery connectors. Mates to single-cell LiPo batteries.
 
@@ -9734,7 +9734,7 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 </device>
 </devices>
 </deviceset>
-<deviceset name="CORTEX_DEBUG" prefix="J">
+<deviceset name="CORTEX_DEBUG" prefix="DEBUG">
 <description>&lt;h3&gt;Cortex Debug Connector - 10 pin&lt;/h3&gt;
 &lt;p&gt;Supports JTAG debug, Serial Wire debug, and Serial Wire Viewer.
 PTH and SMD connector options available.&lt;/p&gt;
