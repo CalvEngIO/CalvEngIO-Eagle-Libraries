@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.1">
+<eagle version="9.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -782,7 +782,7 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD623.pdf</descr
 </device>
 </devices>
 </deviceset>
-<deviceset name="INA-A" prefix="INA">
+<deviceset name="INA-A" prefix="OP">
 <description>&lt;b&gt;Generic symbol and footprint for single supply instrumentation amplifier&lt;/b&gt;&lt;p&gt;
 Fits AD8220, AD8226, AD8227, and others&lt;p&gt;
 Source: http://www.analog.com/media/en/technical-documentation/data-sheets/AD8227.pdf</description>
