@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.1">
+<eagle version="9.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -418,7 +418,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 </device>
 </devices>
 </deviceset>
-<deviceset name="CRYSTAL-CA-310">
+<deviceset name="CRYSTAL-CA-310" prefix="Y" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="Q" x="0" y="0"/>
 </gates>
