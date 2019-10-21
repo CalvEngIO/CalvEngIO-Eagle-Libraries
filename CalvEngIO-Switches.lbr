@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.0">
+<eagle version="9.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -67,6 +67,8 @@
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="no" active="no"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -94,7 +96,10 @@
 <layer number="114" name="Badge_Outline" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="117" name="BACKMAAT1" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="119" name="KAP_TEKEN" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="120" name="KAP_MAAT1" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
@@ -104,8 +109,10 @@
 <layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="130" name="SMDSTROOK" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="133" name="bottom_silk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
@@ -146,6 +153,8 @@
 <layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="231" name="231bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="no" active="no"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="no" active="no"/>
 <layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
@@ -283,13 +292,6 @@
 <rectangle x1="4.826" y1="-1.397" x2="5.842" y2="-1.016" layer="21"/>
 <text x="4.826" y="-3.937" size="1.524" layer="51" ratio="10">5</text>
 </package>
-<package name="TEST">
-<wire x1="-1.3778" y1="3.0842" x2="-3.643" y2="3.0842" width="1.016" layer="16"/>
-<wire x1="-3.643" y1="3.0842" x2="-3.7084" y2="3.1496" width="1.016" layer="16"/>
-<wire x1="-1.3778" y1="0.5842" x2="-2.2098" y2="0.5842" width="0.8128" layer="16"/>
-<wire x1="-2.2098" y1="0.5842" x2="-3.556" y2="-0.762" width="0.8128" layer="16"/>
-<wire x1="-3.556" y1="-0.762" x2="-3.556" y2="-7.5228" width="0.8128" layer="16"/>
-</package>
 <package name="SWITCH.00.THT">
 <wire x1="-3.6" y1="2.65" x2="-3.6" y2="-2.65" width="0.2032" layer="21"/>
 <wire x1="-3.6" y1="-2.65" x2="3.6" y2="-2.65" width="0.2032" layer="21"/>
@@ -378,15 +380,15 @@
 <text x="-1.9812" y="1.4986" size="0.508" layer="25">&gt;Name</text>
 <text x="-1.9304" y="-1.9812" size="0.508" layer="27">&gt;Value</text>
 </package>
-<package name="SPST.MOM.KSC641JLFS">
+<package name="SPST.MOM.KSC">
 <wire x1="-4.3" y1="-2" x2="-4.3" y2="2" width="0.127" layer="21"/>
 <wire x1="-4.3" y1="2" x2="4.3" y2="2" width="0.127" layer="21"/>
 <wire x1="4.3" y1="2" x2="4.3" y2="-2" width="0.127" layer="21"/>
 <wire x1="4.3" y1="-2" x2="-4.3" y2="-2" width="0.127" layer="21"/>
-<smd name="2" x="2.9" y="2" dx="2.8" dy="1" layer="1"/>
-<smd name="4" x="2.9" y="-2" dx="2.8" dy="1" layer="1"/>
-<smd name="1" x="-2.9" y="2" dx="2.8" dy="1" layer="1"/>
-<smd name="3" x="-2.9" y="-2" dx="2.8" dy="1" layer="1"/>
+<smd name="1" x="2.9" y="2" dx="2.8" dy="1" layer="1"/>
+<smd name="3" x="2.9" y="-2" dx="2.8" dy="1" layer="1"/>
+<smd name="2" x="-2.9" y="2" dx="2.8" dy="1" layer="1"/>
+<smd name="4" x="-2.9" y="-2" dx="2.8" dy="1" layer="1"/>
 <text x="-3.81" y="2.54" size="1.27" layer="25">&gt;Name</text>
 <text x="-3.81" y="-3.81" size="1.27" layer="27">&gt;Value</text>
 </package>
@@ -404,7 +406,178 @@
 <text x="-4.064" y="-0.0254" size="0.6096" layer="25" ratio="20" rot="R90" align="bottom-center">&gt;Name</text>
 <text x="3.937" y="0" size="0.6096" layer="27" ratio="20" rot="R90" align="top-center">&gt;Value</text>
 </package>
+<package name="CL-SB-22B-11">
+<smd name="5" x="0" y="2.1" dx="1.4" dy="1.2" layer="1" rot="R90"/>
+<smd name="6" x="2.5" y="2.1" dx="1.4" dy="1.2" layer="1" rot="R90"/>
+<smd name="4" x="-2.5" y="2.1" dx="1.4" dy="1.2" layer="1" rot="R90"/>
+<smd name="2" x="0" y="-2.1" dx="1.4" dy="1.2" layer="1" rot="R90"/>
+<smd name="3" x="2.5" y="-2.1" dx="1.4" dy="1.2" layer="1" rot="R90"/>
+<smd name="1" x="-2.5" y="-2.1" dx="1.4" dy="1.2" layer="1" rot="R90"/>
+<wire x1="-4.25" y1="1.75" x2="4.25" y2="1.75" width="0.127" layer="21"/>
+<wire x1="-4.25" y1="-1.75" x2="4.25" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="-2.05" y1="-1.75" x2="-2.05" y2="-3.75" width="0.127" layer="108"/>
+<wire x1="-2.05" y1="-3.75" x2="-0.35" y2="-3.75" width="0.127" layer="108"/>
+<wire x1="-0.35" y1="-3.75" x2="-0.35" y2="-1.75" width="0.127" layer="108"/>
+<wire x1="-4.25" y1="1.75" x2="-4.25" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="4.25" y1="1.75" x2="4.25" y2="-1.75" width="0.127" layer="21"/>
+<text x="-3.81" y="3.81" size="1.27" layer="25">&gt;Name</text>
+<text x="-3.81" y="-5.08" size="1.27" layer="27">&gt;Value</text>
+</package>
+<package name="CL-SB-22B">
+<wire x1="-3.6" y1="2.65" x2="-3.6" y2="-2.65" width="0.2032" layer="21"/>
+<wire x1="-3.6" y1="-2.65" x2="3.6" y2="-2.65" width="0.2032" layer="21"/>
+<wire x1="3.6" y1="-2.65" x2="3.6" y2="2.65" width="0.2032" layer="21"/>
+<wire x1="3.6" y1="2.65" x2="-3.6" y2="2.65" width="0.2032" layer="21"/>
+<smd name="3" x="2.5" y="1.6" dx="1" dy="1.6" layer="1"/>
+<smd name="2" x="0" y="1.6" dx="1" dy="1.6" layer="1"/>
+<smd name="1" x="-2.5" y="1.6" dx="1" dy="1.6" layer="1"/>
+<smd name="7" x="2.5" y="-1.6" dx="1" dy="1.6" layer="1"/>
+<smd name="6" x="0" y="-1.6" dx="1" dy="1.6" layer="1"/>
+<smd name="5" x="-2.5" y="-1.6" dx="1" dy="1.6" layer="1"/>
+<text x="-4.699" y="-0.0254" size="0.6096" layer="25" ratio="20" rot="R90" align="bottom-center">&gt;Name</text>
+<text x="4.572" y="0" size="0.6096" layer="27" ratio="20" rot="R90" align="top-center">&gt;Value</text>
+<hole x="-3.4" y="0" drill="0.9"/>
+<hole x="3.4" y="0" drill="0.9"/>
+<wire x1="-1.1684" y1="-2.667" x2="-1.1684" y2="-4.8768" width="0.127" layer="108"/>
+<wire x1="-1.1684" y1="-4.8768" x2="0.9398" y2="-4.8768" width="0.127" layer="108"/>
+<wire x1="0.9398" y1="-4.8768" x2="0.9398" y2="-2.667" width="0.127" layer="108"/>
+<text x="-0.9398" y="-4.0132" size="0.3302" layer="108">Actuator</text>
+</package>
+<package name="PTS540JK035SMTRLFS">
+<wire x1="-1.85" y1="1.7" x2="1.85" y2="1.7" width="0.127" layer="21"/>
+<wire x1="1.85" y1="1.7" x2="1.85" y2="-1.7" width="0.127" layer="21"/>
+<wire x1="1.85" y1="-1.7" x2="-1.85" y2="-1.7" width="0.127" layer="21"/>
+<wire x1="-1.85" y1="-1.7" x2="-1.85" y2="1.7" width="0.127" layer="21"/>
+<text x="-2.95" y="2.2" size="1.27" layer="25">&gt;Name</text>
+<text x="-2.95" y="-3.5" size="1.27" layer="27">&gt;Value</text>
+<smd name="3" x="-1.55" y="-1.375" dx="0.6" dy="0.65" layer="1"/>
+<smd name="1" x="-1.55" y="1.375" dx="0.6" dy="0.65" layer="1"/>
+<smd name="2" x="1.55" y="1.375" dx="0.6" dy="0.65" layer="1"/>
+<smd name="4" x="1.55" y="-1.375" dx="0.6" dy="0.65" layer="1"/>
+</package>
+<package name="SPDT.EG1224">
+<pad name="3" x="4" y="1.25" drill="0.6"/>
+<pad name="P$2" x="6" y="3" drill="1.6"/>
+<pad name="P$3" x="-6" y="3" drill="1.6"/>
+<pad name="P$4" x="-6" y="-3" drill="1.6"/>
+<pad name="1" x="-4" y="1.25" drill="0.6"/>
+<pad name="P$6" x="6" y="-3" drill="1.6"/>
+<pad name="2" x="0" y="1.25" drill="0.6"/>
+<wire x1="-6.9" y1="3.25" x2="6.9" y2="3.25" width="0.127" layer="21"/>
+<wire x1="6.9" y1="3.25" x2="6.9" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="6.9" y1="-3.25" x2="-6.9" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="-6.9" y1="-3.25" x2="-6.9" y2="3.25" width="0.127" layer="21"/>
+<text x="-4.2" y="5.9" size="1.27" layer="25">&gt;Name</text>
+<text x="-4.2" y="4" size="1.27" layer="27">&gt;Value</text>
+<wire x1="-4" y1="-3.25" x2="-4" y2="-12.25" width="0.127" layer="108"/>
+<wire x1="-4" y1="-12.25" x2="1" y2="-12.25" width="0.127" layer="108"/>
+<wire x1="1" y1="-12.25" x2="1" y2="-3.25" width="0.127" layer="108"/>
+</package>
+<package name="TL1105XF160Q">
+<pad name="P$1" x="-3.5" y="1.25" drill="1.3"/>
+<pad name="P$2" x="3.5" y="1.25" drill="1.3"/>
+<pad name="1" x="-2.25" y="-1.25" drill="1"/>
+<pad name="2" x="2.25" y="-1.25" drill="1"/>
+<wire x1="3.7" y1="-3.75" x2="3.7" y2="2.75" width="0.127" layer="21"/>
+<wire x1="-3.7" y1="-3.75" x2="-3.7" y2="2.75" width="0.127" layer="21"/>
+<wire x1="-3.7" y1="2.75" x2="3.7" y2="2.75" width="0.127" layer="21"/>
+<wire x1="-3.7" y1="-3.75" x2="-1.75" y2="-3.75" width="0.127" layer="21"/>
+<wire x1="-1.75" y1="-3.75" x2="1.75" y2="-3.75" width="0.127" layer="21"/>
+<wire x1="1.75" y1="-3.75" x2="3.7" y2="-3.75" width="0.127" layer="21"/>
+<wire x1="-1.75" y1="-3.75" x2="-1.75" y2="-7.1" width="0.127" layer="21"/>
+<wire x1="-1.75" y1="-7.1" x2="1.75" y2="-7.1" width="0.127" layer="21"/>
+<wire x1="1.75" y1="-7.1" x2="1.75" y2="-3.75" width="0.127" layer="21"/>
+<text x="-1.8" y="-7" size="0.889" layer="109">Button</text>
+<text x="-3.81" y="5.08" size="1.27" layer="25">&gt;Name</text>
+<text x="-3.81" y="3.175" size="1.27" layer="27">&gt;Value</text>
+</package>
+<package name="2-1825027-0" urn="urn:adsk.eagle:footprint:14261229/1">
+<pad name="P$1" x="-3.5" y="2.325" drill="1.3"/>
+<pad name="P$2" x="3.5" y="2.325" drill="1.3"/>
+<pad name="1" x="-2.25" y="-0.165" drill="1"/>
+<pad name="2" x="2.25" y="-0.165" drill="1"/>
+<wire x1="3.555" y1="-3.845" x2="3.555" y2="3.845" width="0.127" layer="21"/>
+<wire x1="-3.555" y1="-3.845" x2="-3.555" y2="3.845" width="0.127" layer="21"/>
+<wire x1="-3.555" y1="3.845" x2="3.555" y2="3.845" width="0.127" layer="21"/>
+<wire x1="-3.555" y1="-3.845" x2="-1.75" y2="-3.845" width="0.127" layer="21"/>
+<wire x1="-1.75" y1="-3.845" x2="1.75" y2="-3.845" width="0.127" layer="21"/>
+<wire x1="1.75" y1="-3.845" x2="3.555" y2="-3.845" width="0.127" layer="21"/>
+<wire x1="-1.75" y1="-3.845" x2="-1.75" y2="-15.695" width="0.127" layer="21"/>
+<wire x1="-1.75" y1="-15.695" x2="1.75" y2="-15.695" width="0.127" layer="21"/>
+<wire x1="1.75" y1="-15.695" x2="1.75" y2="-3.845" width="0.127" layer="21"/>
+<text x="0.28" y="-14.99" size="0.889" layer="109" rot="R90">11.85mm Actuator</text>
+<text x="-3.33" y="6.6" size="1.27" layer="25">&gt;Name</text>
+<text x="-3.27" y="4.675" size="1.27" layer="27">&gt;Value</text>
+</package>
+<package name="SPST.TL3360DF185Q">
+<smd name="P$1" x="0" y="1.71" dx="5.33" dy="2.79" layer="1"/>
+<smd name="P$2" x="-3.65" y="-3.035" dx="4.19" dy="1.46" layer="1" rot="R90"/>
+<smd name="P$3" x="3.65" y="-3.035" dx="4.19" dy="1.46" layer="1" rot="R90"/>
+<smd name="1" x="-1.8725" y="-3.58" dx="3.76" dy="1.205" layer="1" rot="R90"/>
+<smd name="2" x="1.8725" y="-3.58" dx="3.76" dy="1.205" layer="1" rot="R90"/>
+<wire x1="-3.15" y1="-5.47" x2="3.15" y2="-5.47" width="0.127" layer="21"/>
+<wire x1="3.15" y1="-5.47" x2="3.15" y2="-0.87" width="0.127" layer="21"/>
+<wire x1="3.15" y1="-0.87" x2="-3.15" y2="-0.87" width="0.127" layer="21"/>
+<wire x1="-3.15" y1="-0.87" x2="-3.15" y2="-5.47" width="0.127" layer="21"/>
+<wire x1="-1.775" y1="0" x2="-1.775" y2="8.72" width="0.127" layer="21"/>
+<wire x1="-1.775" y1="8.72" x2="1.775" y2="8.72" width="0.127" layer="21"/>
+<wire x1="1.775" y1="8.72" x2="1.775" y2="0" width="0.127" layer="21"/>
+<text x="0.2" y="3.8" size="0.45" layer="109" rot="R90">8.72mm actuator</text>
+</package>
+<package name="SPDT.L102021ML04Q">
+<pad name="2" x="-2.54" y="0" drill="1.65"/>
+<pad name="3" x="-2.54" y="4.75" drill="1.65"/>
+<pad name="1" x="-2.54" y="-4.75" drill="1.65"/>
+<wire x1="5.08" y1="9.65" x2="5.08" y2="0" width="0.127" layer="21"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="-9.65" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-9.65" x2="-5.08" y2="-9.65" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-9.65" x2="-5.08" y2="9.65" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="9.65" x2="5.08" y2="9.65" width="0.127" layer="21"/>
+<wire x1="5.08" y1="0" x2="13.59" y2="0" width="0.127" layer="21"/>
+<wire x1="13.59" y1="0" x2="13.59" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="13.59" y1="-5.08" x2="5.08" y2="-5.08" width="0.127" layer="21"/>
+<text x="-5.08" y="12.7" size="1.5" layer="25">&gt;Name</text>
+<text x="-5.08" y="10.4" size="1.5" layer="27">&gt;Value</text>
+<text x="6.35" y="0" size="1.27" layer="21">8.51mm</text>
+</package>
+<package name="SPDT.100SP1T2B1M6QE" urn="urn:adsk.eagle:footprint:14261190/1">
+<pad name="2" x="-6.35" y="0" drill="1.35" shape="long" rot="R90"/>
+<pad name="3" x="-6.35" y="4.7" drill="1.35" shape="long" rot="R90"/>
+<pad name="1" x="-6.35" y="-4.7" drill="1.35" shape="long" rot="R90"/>
+<pad name="P$4" x="6.35" y="2.54" drill="1.35" shape="long" rot="R90"/>
+<pad name="P$5" x="6.35" y="-2.54" drill="1.35" shape="long" rot="R90"/>
+<wire x1="-7.5" y1="7" x2="-7.5" y2="-7" width="0.127" layer="21"/>
+<wire x1="-7.5" y1="-7" x2="7.5" y2="-7" width="0.127" layer="21"/>
+<wire x1="7.5" y1="-7" x2="7.5" y2="-2.75" width="0.127" layer="21"/>
+<wire x1="7.5" y1="-2.75" x2="7.5" y2="2.75" width="0.127" layer="21"/>
+<wire x1="7.5" y1="2.75" x2="7.5" y2="7" width="0.127" layer="21"/>
+<wire x1="7.5" y1="7" x2="-7.5" y2="7" width="0.127" layer="21"/>
+<wire x1="7.5" y1="2.75" x2="16.5" y2="2.75" width="0.127" layer="21"/>
+<wire x1="16.5" y1="2.75" x2="16.5" y2="1.35" width="0.127" layer="21"/>
+<wire x1="16.5" y1="1.35" x2="16.5" y2="-1.35" width="0.127" layer="21"/>
+<wire x1="16.5" y1="-1.35" x2="16.5" y2="-2.75" width="0.127" layer="21"/>
+<wire x1="16.5" y1="-2.75" x2="7.5" y2="-2.75" width="0.127" layer="21"/>
+<wire x1="16.5" y1="1.35" x2="21.58" y2="1.35" width="0.127" layer="21"/>
+<wire x1="21.58" y1="1.35" x2="21.58" y2="-1.35" width="0.127" layer="21"/>
+<wire x1="21.58" y1="-1.35" x2="16.5" y2="-1.35" width="0.127" layer="21"/>
+<text x="-2.8" y="1.93" size="1.27" layer="25">&gt;Name</text>
+<text x="-2.8" y="-0.21" size="1.27" layer="27">&gt;Value</text>
+<text x="16.51" y="-1.27" size="1.27" layer="21">5mm</text>
+</package>
 </packages>
+<packages3d>
+<package3d name="2-1825027-0" urn="urn:adsk.eagle:package:14261228/2" type="model">
+<packageinstances>
+<packageinstance name="2-1825027-0"/>
+</packageinstances>
+</package3d>
+<package3d name="SPDT.100SP1T2B1M6QE" urn="urn:adsk.eagle:package:14261188/2" type="model">
+<packageinstances>
+<packageinstance name="SPDT.100SP1T2B1M6QE"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
 <symbol name="DIPSWITCH-04">
 <wire x1="-3.302" y1="0.508" x2="0" y2="0.508" width="0.1524" layer="94"/>
@@ -576,9 +749,9 @@
 <pin name="1" x="5.08" y="5.08" visible="off" length="short" rot="R180"/>
 <pin name="2" x="-5.08" y="2.54" visible="off" length="short"/>
 <pin name="3" x="5.08" y="0" visible="off" length="short" rot="R180"/>
-<pin name="5" x="5.08" y="-2.54" visible="off" length="short" rot="R180"/>
-<pin name="6" x="-5.08" y="-5.08" visible="off" length="short"/>
-<pin name="7" x="5.08" y="-7.62" visible="off" length="short" rot="R180"/>
+<pin name="4" x="5.08" y="-2.54" visible="off" length="short" rot="R180"/>
+<pin name="5" x="-5.08" y="-5.08" visible="off" length="short"/>
+<pin name="6" x="5.08" y="-7.62" visible="off" length="short" rot="R180"/>
 </symbol>
 <symbol name="SWITCH-MOMENTARY">
 <description>&lt;h3&gt;Momentary Switch (Pushbutton) - SPST - Two Circuits&lt;/h3&gt;
@@ -715,7 +888,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="SWITCH.JS202011JXQN" prefix="SW">
+<deviceset name="SWITCH.JS202011JXQN" prefix="SW" uservalue="yes">
 <description>&lt;p&gt;&lt;b&gt;Manufacturer's Part Numer:&lt;/b&gt;&lt;/p&gt;
 &lt;p&gt;JS202011JAQN for right angle throw
 &lt;br&gt;JS202011JCQN for top side throw&lt;/br&gt;&lt;/p&gt;</description>
@@ -728,9 +901,9 @@
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="4" pad="5"/>
+<connect gate="G$1" pin="5" pad="6"/>
+<connect gate="G$1" pin="6" pad="7"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -741,9 +914,9 @@
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="4" pad="5"/>
+<connect gate="G$1" pin="5" pad="6"/>
+<connect gate="G$1" pin="6" pad="7"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -822,16 +995,261 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="SPST.MOM.KSC641JLFS" prefix="SW">
+<deviceset name="SPST.MOM.KSC" prefix="SW" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="SPST" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SPST.MOM.KSC641JLFS">
+<device name="" package="SPST.MOM.KSC">
 <connects>
 <connect gate="G$1" pin="A" pad="1 2"/>
 <connect gate="G$1" pin="B" pad="3 4"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name=".1-3" package="SPST.MOM.KSC">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="B" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name=".2-3" package="SPST.MOM.KSC">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="B" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name=".1-4" package="SPST.MOM.KSC">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="B" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name=".2-4" package="SPST.MOM.KSC">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="B" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DPDT.CL-SB-22B-11T" prefix="SW">
+<gates>
+<gate name="G$1" symbol="DPDT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CL-SB-22B-11">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SPST.PTS540JK035SMTRLFS" prefix="SW" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="SPST" x="0" y="0"/>
+</gates>
+<devices>
+<device name="1-3" package="PTS540JK035SMTRLFS">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="B" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name=".1-4" package="PTS540JK035SMTRLFS">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="B" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name=".2-3" package="PTS540JK035SMTRLFS">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="B" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="2-4" package="PTS540JK035SMTRLFS">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="B" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SPST-PTS830GG140-COPY" prefix="SW" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="SPST" x="0" y="0"/>
+</gates>
+<devices>
+<device name=".1-3" package="BUTTON-GULLWING">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="B" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name=".1-4" package="BUTTON-GULLWING">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="B" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name=".2-4" package="BUTTON-GULLWING">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="B" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name=".2-3" package="BUTTON-GULLWING">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SPDT.EG1224" prefix="SW" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="SPDT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SPDT.EG1224">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SW.TL1105XF160Q" prefix="SW" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="SPST" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TL1105XF160Q">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="B" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SPST.2-1825027-0" prefix="SW" uservalue="yes">
+<description>11.85mm actuator</description>
+<gates>
+<gate name="G$1" symbol="SPST" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="2-1825027-0">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="B" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14261228/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SPST.TL3360DF185Q" prefix="SW" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="SPST" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SPST.TL3360DF185Q">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="B" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SPDT" prefix="SW" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="SPDT" x="0" y="0"/>
+</gates>
+<devices>
+<device name=".L102021ML04Q" package="SPDT.L102021ML04Q">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name=".IDK" package="2-1825027-0">
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14261228/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name=".100SP1T2B1M6QE" package="SPDT.100SP1T2B1M6QE">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14261188/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -841,4 +1259,16 @@
 </devicesets>
 </library>
 </drawing>
+<compatibility>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
+</note>
+</compatibility>
 </eagle>

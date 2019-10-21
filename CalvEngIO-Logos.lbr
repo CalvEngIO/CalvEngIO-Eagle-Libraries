@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.1">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1797,6 +1797,15 @@
 </package>
 <package name="REV.F">
 <text x="0" y="0" size="0.6096" layer="21">RevF</text>
+</package>
+<package name="REV.C">
+<text x="0" y="0" size="0.6096" layer="21">RevC</text>
+</package>
+<package name="REV.D">
+<text x="0" y="0" size="0.6096" layer="21">RevD</text>
+</package>
+<package name="REV.E">
+<text x="0" y="0" size="0.6096" layer="21">RevE</text>
 </package>
 </packages>
 <symbols>
@@ -7029,9 +7038,18 @@
 <symbol name="REV.F">
 <text x="0" y="0" size="2.54" layer="90">Rev F</text>
 </symbol>
+<symbol name="REV.C">
+<text x="0" y="0" size="2.54" layer="90">Rev C</text>
+</symbol>
+<symbol name="REV.D">
+<text x="0" y="0" size="2.54" layer="90">Rev D</text>
+</symbol>
+<symbol name="REV.E">
+<text x="0" y="0" size="2.54" layer="90">Rev E</text>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="CALVENGIO_HANDLE">
+<deviceset name="CALVENGIO_HANDLE" prefix="LOGO" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="CALVENGIO_HANDLE.15" x="0" y="0"/>
 </gates>
@@ -7181,7 +7199,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="LINNES.LAB">
+<deviceset name="LINNES.LAB" prefix="LL.LOGO">
 <gates>
 <gate name="G$1" symbol="LINNES.LAB" x="0" y="0"/>
 </gates>
@@ -7218,7 +7236,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="LINNES.LAB.LOGO">
+<deviceset name="LINNES.LAB.LOGO" prefix="LOGO">
 <gates>
 <gate name="G$1" symbol="LINNES.LAB.LOGO" x="0" y="0"/>
 </gates>
@@ -7230,7 +7248,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="REVISION.A" prefix="REV">
+<deviceset name="REVISION.A" prefix="LOGO">
 <gates>
 <gate name="G$1" symbol="REV.A" x="0" y="0"/>
 </gates>
@@ -7254,12 +7272,48 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="REVISION.B">
+<deviceset name="REVISION.B" prefix="LOGO">
 <gates>
 <gate name="G$1" symbol="REV.B" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="REV.B">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="REVISION.C" prefix="LOGO">
+<gates>
+<gate name="G$1" symbol="REV.C" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="REV.C">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="REVISION.D" prefix="LOGO">
+<gates>
+<gate name="G$1" symbol="REV.D" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="REV.D">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="REVISION.E" prefix="LOGO">
+<gates>
+<gate name="G$1" symbol="REV.E" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="REV.E">
 <technologies>
 <technology name=""/>
 </technologies>
