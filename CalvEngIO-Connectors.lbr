@@ -8025,7 +8025,7 @@ Description:
 <wire x1="-0.835" y1="1.07" x2="-0.835" y2="-1.07" width="0.127" layer="21"/>
 <wire x1="17.345" y1="1.07" x2="17.345" y2="-1.07" width="0.127" layer="21"/>
 </package>
-<package name="1X15_NO_SILK_50MIL">
+<package name="1X15_NO_SILK_50MIL" urn="urn:adsk.eagle:footprint:15664806/1">
 <description>&lt;h3&gt;Plated Through Hole -14 Pin No Silk outline&lt;/h3&gt;
 &lt;p&gt;Specifications:
 &lt;ul&gt;&lt;li&gt;Pin count:14&lt;/li&gt;
@@ -8035,40 +8035,40 @@ Description:
 &lt;ul&gt;&lt;li&gt;CONN_14&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;</description>
 <pad name="1" x="0" y="0" drill="0.508" diameter="1.016" rot="R90"/>
+<pad name="2" x="1.27" y="0" drill="0.508" diameter="1.016" rot="R90"/>
+<pad name="3" x="2.54" y="0" drill="0.508" diameter="1.016" rot="R90"/>
+<pad name="4" x="3.81" y="0" drill="0.508" diameter="1.016" rot="R90"/>
+<pad name="5" x="5.08" y="0" drill="0.508" diameter="1.016" rot="R90"/>
+<pad name="6" x="6.35" y="0" drill="0.508" diameter="1.016" rot="R90"/>
+<pad name="7" x="7.62" y="0" drill="0.508" diameter="1.016" rot="R90"/>
+<pad name="8" x="8.89" y="0" drill="0.508" diameter="1.016" rot="R90"/>
+<pad name="9" x="10.16" y="0" drill="0.508" diameter="1.016" rot="R90"/>
+<pad name="10" x="11.43" y="0" drill="0.508" diameter="1.016" rot="R90"/>
+<pad name="11" x="12.7" y="0" drill="0.508" diameter="1.016" rot="R90"/>
+<pad name="12" x="13.97" y="0" drill="0.508" diameter="1.016" rot="R90"/>
+<pad name="13" x="15.24" y="0" drill="0.508" diameter="1.016" rot="R90"/>
+<pad name="14" x="16.51" y="0" drill="0.508" diameter="1.016" rot="R90"/>
+<pad name="15" x="17.78" y="0" drill="0.508" diameter="1.016" rot="R90"/>
 <rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
+<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
+<rectangle x1="6.096" y1="-0.254" x2="6.604" y2="0.254" layer="51"/>
+<rectangle x1="7.366" y1="-0.254" x2="7.874" y2="0.254" layer="51"/>
+<rectangle x1="8.636" y1="-0.254" x2="9.144" y2="0.254" layer="51"/>
+<rectangle x1="9.906" y1="-0.254" x2="10.414" y2="0.254" layer="51"/>
+<rectangle x1="11.176" y1="-0.254" x2="11.684" y2="0.254" layer="51"/>
+<rectangle x1="12.446" y1="-0.254" x2="12.954" y2="0.254" layer="51"/>
+<rectangle x1="13.716" y1="-0.254" x2="14.224" y2="0.254" layer="51"/>
+<rectangle x1="14.986" y1="-0.254" x2="15.494" y2="0.254" layer="51"/>
+<rectangle x1="16.256" y1="-0.254" x2="16.764" y2="0.254" layer="51"/>
+<rectangle x1="17.526" y1="-0.254" x2="18.034" y2="0.254" layer="51"/>
 <text x="-1.27" y="1.397" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-1.27" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
-<pad name="2" x="1.27" y="0" drill="0.508" diameter="1.016" rot="R90"/>
-<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
-<pad name="3" x="2.54" y="0" drill="0.508" diameter="1.016" rot="R90"/>
-<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
-<pad name="4" x="3.81" y="0" drill="0.508" diameter="1.016" rot="R90"/>
-<rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
-<pad name="5" x="5.08" y="0" drill="0.508" diameter="1.016" rot="R90"/>
-<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
-<pad name="6" x="6.35" y="0" drill="0.508" diameter="1.016" rot="R90"/>
-<rectangle x1="6.096" y1="-0.254" x2="6.604" y2="0.254" layer="51"/>
-<pad name="7" x="7.62" y="0" drill="0.508" diameter="1.016" rot="R90"/>
-<rectangle x1="7.366" y1="-0.254" x2="7.874" y2="0.254" layer="51"/>
-<pad name="8" x="8.89" y="0" drill="0.508" diameter="1.016" rot="R90"/>
-<rectangle x1="8.636" y1="-0.254" x2="9.144" y2="0.254" layer="51"/>
-<pad name="9" x="10.16" y="0" drill="0.508" diameter="1.016" rot="R90"/>
-<rectangle x1="9.906" y1="-0.254" x2="10.414" y2="0.254" layer="51"/>
-<pad name="10" x="11.43" y="0" drill="0.508" diameter="1.016" rot="R90"/>
-<rectangle x1="11.176" y1="-0.254" x2="11.684" y2="0.254" layer="51"/>
-<pad name="11" x="12.7" y="0" drill="0.508" diameter="1.016" rot="R90"/>
-<rectangle x1="12.446" y1="-0.254" x2="12.954" y2="0.254" layer="51"/>
-<pad name="12" x="13.97" y="0" drill="0.508" diameter="1.016" rot="R90"/>
-<rectangle x1="13.716" y1="-0.254" x2="14.224" y2="0.254" layer="51"/>
-<pad name="13" x="15.24" y="0" drill="0.508" diameter="1.016" rot="R90"/>
-<rectangle x1="14.986" y1="-0.254" x2="15.494" y2="0.254" layer="51"/>
-<pad name="14" x="16.51" y="0" drill="0.508" diameter="1.016" rot="R90"/>
-<rectangle x1="16.256" y1="-0.254" x2="16.764" y2="0.254" layer="51"/>
 <wire x1="-0.835" y1="1.07" x2="18.615" y2="1.07" width="0.127" layer="21"/>
 <wire x1="-0.835" y1="-1.07" x2="18.615" y2="-1.07" width="0.127" layer="21"/>
 <wire x1="-0.835" y1="1.07" x2="-0.835" y2="-1.07" width="0.127" layer="21"/>
-<pad name="15" x="17.78" y="0" drill="0.508" diameter="1.016" rot="R90"/>
-<rectangle x1="17.526" y1="-0.254" x2="18.034" y2="0.254" layer="51"/>
 <wire x1="18.615" y1="1.07" x2="18.615" y2="-1.07" width="0.127" layer="21"/>
 </package>
 <package name="TP_20MIL">
@@ -8678,6 +8678,19 @@ Tyco Electronics</description>
 <package3d name="USBC.USB4110-GF-A" urn="urn:adsk.eagle:package:14265737/2" type="model">
 <packageinstances>
 <packageinstance name="USBC.USB4110-GF-A"/>
+</packageinstances>
+</package3d>
+<package3d name="1X15_NO_SILK_50MIL" urn="urn:adsk.eagle:package:15664805/2" type="model">
+<description>&lt;h3&gt;Plated Through Hole -14 Pin No Silk outline&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:14&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_14&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="1X15_NO_SILK_50MIL"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -13566,6 +13579,9 @@ Description:
 <connect gate="G$1" pin="8" pad="8"/>
 <connect gate="G$1" pin="9" pad="9"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:15664805/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
